@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+<header class="header">
+  <div class="header-top">
+    <div class="container">
+      <div class="header-top__inner">
+        <a class="header-top__location" href="#">
+          <img src="img/icon/location.svg" alt="location logo">
+          Москва
+        </a>      
+        <ul class="header-top__list">
+          <li class="header-top__item">
+            <a class="header-top__link" href="#">Отзывы</a>
+          </li>
+          <li class="header-top__item">
+            <a class="header-top__link" href="#">О нас</a>
+          </li>
+          <li class="header-top__item">
+            <a class="header-top__link" href="#">Доставка</a>
+          </li>
+          <li class="header-top__item">
+            <a class="header-top__link" href="#">Оплата</a>
+          </li>
+          <li class="header-top__item">
+            <a class="header-top__link" href="#">Подключение техники</a>
+          </li>
+          <li class="header-top__item">
+            <a class="header-top__link" href="#">Доп. сервис</a>
+          </li>
+          <li class="header-top__item">
+            <a class="header-top__link" href="#">Наши гарантии</a>
+          </li>
+          <li class="header-top__item">
+            <a class="header-top__link" href="#">Почему мы?</a>
+          </li>
+          <li class="header-top__item">
+            <a class="header-top__link" href="#">Контакты</a>
+          </li>
+          <li class="header-top__item">
+            <a class="header-top__link" href="#">Оставить обращение</a>
+          </li>
+        </ul>
+        <a class="header-top__account" href="#">
+          <img src="img/icon/account.svg" alt="account logo">
+          Личный кабинет
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="header-nav">
+    <div class="container">
+      <div class="header-nav__inner">
+        <a class="header-nav__logo" href="#">
+          <img src="img/icon/logo.png" alt="logo">
+        </a>           
+        <ul class="header-nav__list">
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#">Техника</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#">Мебель</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#">Инструменты</a>
+          </li>
+        </ul>
+        <form class="header-nav__form" action="#">
+          <input class="header-nav__text" type="text" placeholder="Что будем искать?">
+          <input class="header-nav__button" type="submit">
+        </form>
+        <ul class="header-nav__social">
+          <li class="header-nav__social-item">
+            <a class="header-nav__social-link" href="#">
+              <img src="img/icon/viber.svg" alt="viber logo">
+            </a>
+          </li>
+          <li class="header-nav__social-item">
+            <a class="header-nav__social-link" href="#">
+              <img src="img/icon/telegram.svg" alt="telegram logo">
+            </a>
+          </li>
+        </ul>
+        <div class="header-nav__contact">
+          <a class="header-nav__phone" href="tel:+74951509555">+7(495)150-95-55</a>
+          <span class="header-nav__span">9:00 - 22:00 без выходных</span>
+        </div>
+        <div class="header-nav__order">
+          <a class="header-nav__cart" href="#">
+            <div class="header-nav__count">1</div>
+            <img src="img/icon/order.svg" alt="order logo">
+          </a>
+          <div class="header-nav__info">
+            <p class="header-nav__info-title">Корзина</p>
+            <div class="header-nav__num">7500 ₽</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-menu">
+    <div class="container">
+      <div class="header-menu__inner">
+        <a class="header-menu__category" href="#">
+          <img src="img/icon/category.svg" alt="category logo">
+          Все категории  
+        </a>
+        <ul class="header-menu__list">
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="#">Бытовая техника</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="#">Видео и аудио</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="#">Климат</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="#">Компьютерная техника</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="#">Дом и дача</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="#">Спорт и отдых</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="#">Инструмент</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="#">Авто</a>
+          </li>
+        </ul>
+        <a class="header-menu__sale" href="#">% Распродажа</a>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="main">
+  <section class="slider">
+    <div class="container">
+      <div class="slider__inner">
+        <div class="slider__item">
+          <div class="slider__info">
+            <h1 class="slider__info-title">Большой выбор стиральных машин</h1>
+            <p class="slider__info-text">Успей купить по суперцене</p>
+            <a class="slider__info-link" href="#">Подробнее</a>
+          </div>
+          <div class="slider__content">
+            <img src="img/slider/content-bg.png" alt="content bg">
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="slider__info">
+            <h1 class="slider__info-title">Большой выбор стиральных машин</h1>
+            <p class="slider__info-text">Успей купить по суперцене</p>
+            <a class="slider__info-link" href="#">Подробнее</a>
+          </div>
+          <div class="slider__content">
+            <img src="img/slider/content-bg.png" alt="content bg">
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="slider__info">
+            <h1 class="slider__info-title">Большой выбор стиральных машин</h1>
+            <p class="slider__info-text">Успей купить по суперцене</p>
+            <a class="slider__info-link" href="#">Подробнее</a>
+          </div>
+          <div class="slider__content">
+            <img src="img/slider/content-bg.png" alt="content bg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="product">
+    <div class="container">
+      <h1 class="title">Популярное</h1>
+      <div class="product__inner">
+        <div class="product__card">
+          <div class="product__content">
+            <img src="img/product/1.png" alt="product img">
+            <span class="product__new">Новинка</span>
+            <span class="product__sale">-20%</span>
+          </div>
+          <div class="product__info">
+            <div class="product__price">
+              <div class="product__new-price">14 300 ₽</div>
+              <div class="product__old-price">18 000 ₽</div>
+            </div>
+            <p class="product__title">Водонагреватель Electrolux EWH 80 Formax</p>
+            <div class="product__container">
+              <div class="star"></div>
+              <a class="product__comment" href="#">
+                <img src="img/icon/comment.svg" alt="comment logo">
+                <div class="product__comment-number">13</div>
+              </a>
+            </div>
+            <a class="product__buy" href="#">Купить</a>
+          </div>
+        </div>
+        <div class="product__card">
+          <div class="product__content">
+            <img src="img/product/2.png" alt="product img">
+            <span class="product__sale">-20%</span>
+          </div>
+          <div class="product__info">
+            <div class="product__price">
+              <div class="product__new-price">14 300 ₽</div>
+              <div class="product__old-price">18 000 ₽</div>
+            </div>
+            <p class="product__title">Стиральная машина LG F-1096TD3</p>
+            <div class="product__container">
+              <div class="star"></div>
+              <a class="product__comment" href="#">
+                <img src="img/icon/comment.svg" alt="comment logo">
+                <div class="product__comment-number">0</div>
+              </a>
+            </div>
+            <a class="product__not" href="#">Нет в наличии</a>
+          </div>
+        </div>
+        <div class="product__card">
+          <div class="product__content">
+            <img src="img/product/3.png" alt="product img">
+            <span class="product__new">Новинка</span>
+            <span class="product__present">Подарок</span>
+          </div>
+          <div class="product__info">
+            <div class="product__price">
+              <div class="product__new-price">20 300 ₽</div>
+            </div>
+            <p class="product__title">Микроволновая печь WHIRLPOOL AMW 730 IX</p>
+            <div class="product__container">
+              <div class="star"></div>
+              <a class="product__comment" href="#">
+                <img src="img/icon/comment.svg" alt="comment logo">
+                <div class="product__comment-number">13</div>
+              </a>
+            </div>
+            <a class="product__buy" href="#">Купить</a>
+          </div>
+        </div>
+        <div class="product__card">
+          <div class="product__content">
+            <img src="img/product/4.png" alt="product img">
+            <span class="product__new">Новинка</span>
+            <span class="product__sale">-20%</span>
+          </div>
+          <div class="product__info">
+            <div class="product__price">
+              <div class="product__new-price">6 300 ₽</div>
+              <div class="product__old-price">18 000 ₽</div>
+            </div>
+            <p class="product__title">Телефизор BLACKTON 2402B</p>
+            <div class="product__container">
+              <div class="star"></div>
+              <a class="product__comment" href="#">
+                <img src="img/icon/comment.svg" alt="comment logo">
+                <div class="product__comment-number">13</div>
+              </a>
+            </div>
+            <a class="product__buy" href="#">Купить</a>
+          </div>
+        </div>
+        <div class="product__card">
+          <div class="product__content">
+            <img src="img/product/3.png" alt="product img">
+            <span class="product__new">Новинка</span>
+            <span class="product__present">Подарок</span>
+          </div>
+          <div class="product__info">
+            <div class="product__price">
+              <div class="product__new-price">20 300 ₽</div>
+            </div>
+            <p class="product__title">Микроволновая печь WHIRLPOOL AMW 730 IX</p>
+            <div class="product__container">
+              <div class="star"></div>
+              <a class="product__comment" href="#">
+                <img src="img/icon/comment.svg" alt="comment logo">
+                <div class="product__comment-number">13</div>
+              </a>
+            </div>
+            <a class="product__buy" href="#">Купить</a>
+          </div>
+        </div>
+        <div class="product__card">
+          <div class="product__content">
+            <img src="img/product/1.png" alt="product img">
+            <span class="product__new">Новинка</span>
+            <span class="product__sale">-20%</span>
+          </div>
+          <div class="product__info">
+            <div class="product__price">
+              <div class="product__new-price">14 300 ₽</div>
+              <div class="product__old-price">18 000 ₽</div>
+            </div>
+            <p class="product__title">Водонагреватель Electrolux EWH 80 Formax</p>
+            <div class="product__container">
+              <div class="star"></div>
+              <a class="product__comment" href="#">
+                <img src="img/icon/comment.svg" alt="comment logo">
+                <div class="product__comment-number">13</div>
+              </a>
+            </div>
+            <a class="product__buy" href="#">Купить</a>
+          </div>
+        </div>
+        <div class="product__card">
+          <div class="product__content">
+            <img src="img/product/4.png" alt="product img">
+            <span class="product__new">Новинка</span>
+            <span class="product__sale">-20%</span>
+          </div>
+          <div class="product__info">
+            <div class="product__price">
+              <div class="product__new-price">6 300 ₽</div>
+              <div class="product__old-price">18 000 ₽</div>
+            </div>
+            <p class="product__title">Телефизор BLACKTON 2402B</p>
+            <div class="product__container">
+              <div class="star"></div>
+              <a class="product__comment" href="#">
+                <img src="img/icon/comment.svg" alt="comment logo">
+                <div class="product__comment-number">13</div>
+              </a>
+            </div>
+            <a class="product__buy" href="#">Купить</a>
+          </div>
+        </div>
+        <div class="product__card">
+          <div class="product__content">
+            <img src="img/product/2.png" alt="product img">
+            <span class="product__sale">-20%</span>
+          </div>
+          <div class="product__info">
+            <div class="product__price">
+              <div class="product__new-price">14 300 ₽</div>
+              <div class="product__old-price">18 000 ₽</div>
+            </div>
+            <p class="product__title">Стиральная машина LG F-1096TD3</p>
+            <div class="product__container">
+              <div class="star"></div>
+              <a class="product__comment" href="#">
+                <img src="img/icon/comment.svg" alt="comment logo">
+                <div class="product__comment-number">0</div>
+              </a>
+            </div>
+            <a class="product__not" href="#">Нет в наличии</a>
+          </div>
+        </div>
+      </div>
+      <div class="product__wrapper">
+        <a class="product__banner" href="#" style="background-image: url('img/air-pods.png');">
+          <div class="product__banner-info">
+            <h6 class="product__banner-title">AirPods Pro</h6>
+            <p class="product__banner-text">Успей приобрести всего за 2590 ₽</p>
+          </div>
+        </a>
+      </div>
+            <div class="product__inner">
+        <div class="product__card">
+          <div class="product__content">
+            <img src="img/product/1.png" alt="product img">
+            <span class="product__new">Новинка</span>
+            <span class="product__sale">-20%</span>
+          </div>
+          <div class="product__info">
+            <div class="product__price">
+              <div class="product__new-price">14 300 ₽</div>
+              <div class="product__old-price">18 000 ₽</div>
+            </div>
+            <p class="product__title">Водонагреватель Electrolux EWH 80 Formax</p>
+            <div class="product__container">
+              <div class="star"></div>
+              <a class="product__comment" href="#">
+                <img src="img/icon/comment.svg" alt="comment logo">
+                <div class="product__comment-number">13</div>
+              </a>
+            </div>
+            <a class="product__buy" href="#">Купить</a>
+          </div>
+        </div>
+        <div class="product__card">
+          <div class="product__content">
+            <img src="img/product/2.png" alt="product img">
+            <span class="product__sale">-20%</span>
+          </div>
+          <div class="product__info">
+            <div class="product__price">
+              <div class="product__new-price">14 300 ₽</div>
+              <div class="product__old-price">18 000 ₽</div>
+            </div>
+            <p class="product__title">Стиральная машина LG F-1096TD3</p>
+            <div class="product__container">
+              <div class="star"></div>
+              <a class="product__comment" href="#">
+                <img src="img/icon/comment.svg" alt="comment logo">
+                <div class="product__comment-number">0</div>
+              </a>
+            </div>
+            <a class="product__not" href="#">Нет в наличии</a>
+          </div>
+        </div>
+        <div class="product__card">
+          <div class="product__content">
+            <img src="img/product/3.png" alt="product img">
+            <span class="product__new">Новинка</span>
+            <span class="product__present">Подарок</span>
+          </div>
+          <div class="product__info">
+            <div class="product__price">
+              <div class="product__new-price">20 300 ₽</div>
+            </div>
+            <p class="product__title">Микроволновая печь WHIRLPOOL AMW 730 IX</p>
+            <div class="product__container">
+              <div class="star"></div>
+              <a class="product__comment" href="#">
+                <img src="img/icon/comment.svg" alt="comment logo">
+                <div class="product__comment-number">13</div>
+              </a>
+            </div>
+            <a class="product__buy" href="#">Купить</a>
+          </div>
+        </div>
+        <div class="product__card">
+          <div class="product__content">
+            <img src="img/product/4.png" alt="product img">
+            <span class="product__new">Новинка</span>
+            <span class="product__sale">-20%</span>
+          </div>
+          <div class="product__info">
+            <div class="product__price">
+              <div class="product__new-price">6 300 ₽</div>
+              <div class="product__old-price">18 000 ₽</div>
+            </div>
+            <p class="product__title">Телефизор BLACKTON 2402B</p>
+            <div class="product__container">
+              <div class="star"></div>
+              <a class="product__comment" href="#">
+                <img src="img/icon/comment.svg" alt="comment logo">
+                <div class="product__comment-number">13</div>
+              </a>
+            </div>
+            <a class="product__buy" href="#">Купить</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <ssection class="catalog">
+    <div class="container">
+      <h1 class="title">Каталог</h1>
+      <div class="catalog__inner">
+        <div class="catalog__card">
+          <h5 class="catalog__card-title">Крупная бытовая техника</h5>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Холодильники 
+                <div class="catalog__number">(135)</div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Морозильные камеры
+                <div class="catalog__number">(74)</div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Стиральные машины
+                <div class="catalog__number">(213)</div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Посудомоечные машины
+                <div class="catalog__number">(98)</div>
+              </a>
+            </li>
+          </ul>
+          <a class="catalog__link-all" href="#">Все товары
+            <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M29.9515 4.91019C30.1467 4.71493 30.1467 4.39835 29.9515 4.20309L26.7695 1.02111C26.5742 0.825845 26.2577 0.825845 26.0624 1.02111C25.8671 1.21637 25.8671 1.53295 26.0624 1.72821L28.8908 4.55664L26.0624 7.38507C25.8671 7.58033 25.8671 7.89691 26.0624 8.09217C26.2577 8.28744 26.5742 8.28744 26.7695 8.09217L29.9515 4.91019ZM0 5.05664H29.5979V4.05664H0V5.05664Z" fill="#437FC8"/>
+            </svg>
+          </a>
+        </div>
+        <div class="catalog__card">
+          <h5 class="catalog__card-title">Товары для дома</h5>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Холодильники 
+                <div class="catalog__number">(135)</div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Морозильные камеры
+                <div class="catalog__number">(74)</div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Стиральные машины
+                <div class="catalog__number">(213)</div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Посудомоечные машины
+                <div class="catalog__number">(98)</div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Морозильные камеры 
+                <div class="catalog__number">(74)</div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Посудомоечные машины
+                <div class="catalog__number">(98)</div>
+              </a>
+            </li>
+          </ul>
+          <a class="catalog__link-all" href="#">Все товары
+            <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M29.9515 4.91019C30.1467 4.71493 30.1467 4.39835 29.9515 4.20309L26.7695 1.02111C26.5742 0.825845 26.2577 0.825845 26.0624 1.02111C25.8671 1.21637 25.8671 1.53295 26.0624 1.72821L28.8908 4.55664L26.0624 7.38507C25.8671 7.58033 25.8671 7.89691 26.0624 8.09217C26.2577 8.28744 26.5742 8.28744 26.7695 8.09217L29.9515 4.91019ZM0 5.05664H29.5979V4.05664H0V5.05664Z" fill="#437FC8"/>
+            </svg>
+          </a>
+        </div>
+        <div class="catalog__card">
+          <h5 class="catalog__card-title">Мелкая бытовая техника</h5>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Крепления и кронштейны для мелкой кухонной техники
+                <div class="catalog__number">(135)</div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Морозильные камеры
+                <div class="catalog__number">(74)</div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Стиральные машины
+                <div class="catalog__number">(213)</div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Посудомоечные машины
+                <div class="catalog__number">(98)</div>
+              </a>
+            </li>
+          </ul>
+          <a class="catalog__link-all" href="#">Все товары
+            <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M29.9515 4.91019C30.1467 4.71493 30.1467 4.39835 29.9515 4.20309L26.7695 1.02111C26.5742 0.825845 26.2577 0.825845 26.0624 1.02111C25.8671 1.21637 25.8671 1.53295 26.0624 1.72821L28.8908 4.55664L26.0624 7.38507C25.8671 7.58033 25.8671 7.89691 26.0624 8.09217C26.2577 8.28744 26.5742 8.28744 26.7695 8.09217L29.9515 4.91019ZM0 5.05664H29.5979V4.05664H0V5.05664Z" fill="#437FC8"/>
+            </svg>
+          </a>
+        </div>
+        <div class="catalog__card">
+          <h5 class="catalog__card-title">Крупная бытовая техника</h5>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Холодильники
+                <div class="catalog__number">(135)</div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Морозильные камеры
+                <div class="catalog__number">(74)</div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Стиральные машины
+                <div class="catalog__number">(213)</div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Посудомоечные машины
+                <div class="catalog__number">(98)</div>
+              </a>
+            </li>
+          </ul>
+          <a class="catalog__link-all" href="#">Все товары
+            <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M29.9515 4.91019C30.1467 4.71493 30.1467 4.39835 29.9515 4.20309L26.7695 1.02111C26.5742 0.825845 26.2577 0.825845 26.0624 1.02111C25.8671 1.21637 25.8671 1.53295 26.0624 1.72821L28.8908 4.55664L26.0624 7.38507C25.8671 7.58033 25.8671 7.89691 26.0624 8.09217C26.2577 8.28744 26.5742 8.28744 26.7695 8.09217L29.9515 4.91019ZM0 5.05664H29.5979V4.05664H0V5.05664Z" fill="#437FC8"/>
+            </svg>
+          </a>
+        </div>
+        <div class="catalog__card">
+          <h5 class="catalog__card-title">Крупная бытовая техника</h5>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Холодильники 
+                <div class="catalog__number">(135)</div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Морозильные камеры
+                <div class="catalog__number">(74)</div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Стиральные машины
+                <div class="catalog__number">(213)</div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Посудомоечные машины
+                <div class="catalog__number">(98)</div>
+              </a>
+            </li>
+          </ul>
+          <a class="catalog__link-all" href="#">Все товары
+            <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M29.9515 4.91019C30.1467 4.71493 30.1467 4.39835 29.9515 4.20309L26.7695 1.02111C26.5742 0.825845 26.2577 0.825845 26.0624 1.02111C25.8671 1.21637 25.8671 1.53295 26.0624 1.72821L28.8908 4.55664L26.0624 7.38507C25.8671 7.58033 25.8671 7.89691 26.0624 8.09217C26.2577 8.28744 26.5742 8.28744 26.7695 8.09217L29.9515 4.91019ZM0 5.05664H29.5979V4.05664H0V5.05664Z" fill="#437FC8"/>
+            </svg>
+          </a>
+        </div>
+        <div class="catalog__card">
+          <h5 class="catalog__card-title">Товары для дома</h5>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Холодильники 
+                <div class="catalog__number">(135)</div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Морозильные камеры
+                <div class="catalog__number">(74)</div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Стиральные машины
+                <div class="catalog__number">(213)</div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Посудомоечные машины
+                <div class="catalog__number">(98)</div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Морозильные камеры 
+                <div class="catalog__number">(74)</div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Посудомоечные машины
+                <div class="catalog__number">(98)</div>
+              </a>
+            </li>
+          </ul>
+          <a class="catalog__link-all" href="#">Все товары
+            <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M29.9515 4.91019C30.1467 4.71493 30.1467 4.39835 29.9515 4.20309L26.7695 1.02111C26.5742 0.825845 26.2577 0.825845 26.0624 1.02111C25.8671 1.21637 25.8671 1.53295 26.0624 1.72821L28.8908 4.55664L26.0624 7.38507C25.8671 7.58033 25.8671 7.89691 26.0624 8.09217C26.2577 8.28744 26.5742 8.28744 26.7695 8.09217L29.9515 4.91019ZM0 5.05664H29.5979V4.05664H0V5.05664Z" fill="#437FC8"/>
+            </svg>
+          </a>
+        </div>
+        <div class="catalog__card">
+          <h5 class="catalog__card-title">Мелкая бытовая техника</h5>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Крепления и кронштейны для мелкой кухонной техники
+                <div class="catalog__number">(135)</div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Морозильные камеры
+                <div class="catalog__number">(74)</div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Стиральные машины
+                <div class="catalog__number">(213)</div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Посудомоечные машины
+                <div class="catalog__number">(98)</div>
+              </a>
+            </li>
+          </ul>
+          <a class="catalog__link-all" href="#">Все товары
+            <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M29.9515 4.91019C30.1467 4.71493 30.1467 4.39835 29.9515 4.20309L26.7695 1.02111C26.5742 0.825845 26.2577 0.825845 26.0624 1.02111C25.8671 1.21637 25.8671 1.53295 26.0624 1.72821L28.8908 4.55664L26.0624 7.38507C25.8671 7.58033 25.8671 7.89691 26.0624 8.09217C26.2577 8.28744 26.5742 8.28744 26.7695 8.09217L29.9515 4.91019ZM0 5.05664H29.5979V4.05664H0V5.05664Z" fill="#437FC8"/>
+            </svg>
+          </a>
+        </div>
+        <div class="catalog__card">
+          <h5 class="catalog__card-title">Крупная бытовая техника</h5>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Холодильники
+                <div class="catalog__number">(135)</div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Морозильные камеры
+                <div class="catalog__number">(74)</div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Стиральные машины
+                <div class="catalog__number">(213)</div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                Посудомоечные машины
+                <div class="catalog__number">(98)</div>
+              </a>
+            </li>
+          </ul>
+          <a class="catalog__link-all" href="#">Все товары
+            <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M29.9515 4.91019C30.1467 4.71493 30.1467 4.39835 29.9515 4.20309L26.7695 1.02111C26.5742 0.825845 26.2577 0.825845 26.0624 1.02111C25.8671 1.21637 25.8671 1.53295 26.0624 1.72821L28.8908 4.55664L26.0624 7.38507C25.8671 7.58033 25.8671 7.89691 26.0624 8.09217C26.2577 8.28744 26.5742 8.28744 26.7695 8.09217L29.9515 4.91019ZM0 5.05664H29.5979V4.05664H0V5.05664Z" fill="#437FC8"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </ssection>
+</main>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/slick.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
+
