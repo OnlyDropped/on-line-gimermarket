@@ -43,6 +43,113 @@ body {
       margin-right: 3px;
     }
   }
+  .iw-modal {
+    opacity: 0; /*изначально этот блок должен быть прозрачным*/
+    background: rgba(30, 30, 30, 0.25); /*задаём цвет фона*/
+    pointer-events: none; /*делаем чтобы по элементу нельзя было кликнуть когда он прозрачный*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    transition: all 0.5s ease;
+    margin: 0;
+    padding: 0;
+  }
+  .iw-modal:target {
+    opacity: 1; /*при клике блок становится видимым*/
+    pointer-events: auto; /*теперь по блоку можно кликать мышкой*/
+    overflow-y: auto; /*прокрутка по вертикли страницы*/
+  }
+  .iw-modal-wrapper {
+    margin: auto; /*выравниваем модальное окно по центру по горизонтали*/
+    margin-top: 25vh; /*отступ сверху можно задавать в px, % или vh*/
+    max-width: 494px;
+    max-height: 491px;
+    height: 100%;
+    width: 100%;
+    background-color: #1c4e8a;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  /*CSS-свойства для блока, содержащего контент модального окна */
+  .iw-CSS-modal-inner {
+    position: relative;
+    background: #fff; /*цвет фона*/
+    //border: 5px solid rgb(162, 39, 39); /*цвет и толщина рамки*/
+    border-radius: 0px; /*радиус скругления углов*/
+    //background: #c58585;
+    border-radius: 5px;
+    padding: 38px 29px 42px;
+    height: 100%;
+  }
+  /*CSS-свойства заголовка модального окна */
+  .iw-modal-header {
+    padding: 15px; /*внутренний отступ*/
+    //background: #a2b183; /*цвет фона*/
+    position: relative;
+    //padding: 38px 29px 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1e1e1e;
+  }
+  &__modal {
+    max-width: 100%;
+    width: 100%;
+  }
+  &__input {
+    width: 100%;
+    padding: 10px 9px 11px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    &::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 25px;
+      color: #999999;
+    }
+  }
+  .iw-modal-title {
+    font-size: 18px; /*размер шрифта*/
+    color: #555; /*цвет шрифта*/
+    font-weight: bold; /*жирность шрифта*/
+    line-height: 1.5; /*высота строки*/
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  /*CSS для кнопки закрытия*/
+  .iw-close {
+    position: absolute;
+    top: 15px; /*отступ сверху*/
+    right: 10px; /*отступ справа*/
+    font-size: 24px; /*размер шрифта*/
+    color: #555; /*цвет шрифта*/
+    text-decoration: none;
+  }
+  .iw-close:hover,
+  .iw-close:focus {
+    color: #000; /*цвет шрифта при наведении*/
+    cursor: pointer;
+  }
+  /*CSS для блока с текстом*/
+  .iw-modal-text {
+    //padding: 15px 20px; /*внутренний отступ*/
+    padding: 0;
+    padding-top: 23px;
+    //overflow: scroll;
+    //height: inherit;
+  }
+  &__modal-item {
+    margin-bottom: 13px;
+  }
+  &__modal-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: $default;
+  }
 }
 .header-nav {
   &__inner {
@@ -542,6 +649,10 @@ body {
     width: 100%;
     padding: 49px 24px 10px 19px;
     height: 100%;
+    transition: all 0.6s;
+    &:hover {
+      transform: scale(1.06);
+    }
   }
   &__content-title {
     font-weight: 600;
@@ -573,6 +684,7 @@ body {
     position: relative;
     display: flex;
     z-index: 1;
+    transition: all 0.6s;
     &:before {
       position: absolute;
       content: "";
@@ -586,6 +698,9 @@ body {
         rgba(30, 30, 30, 0) 55.29%
       );
       z-index: -1;
+    }
+    &:hover {
+      transform: scale(1.09);
     }
   }
   &__item-link {
@@ -605,6 +720,23 @@ body {
   &__info-bottom {
     display: flex;
     column-gap: 20px;
+  }
+  &__block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: 1;
+    max-width: 690px;
+    width: 100%;
+    padding: 5px 30px;
+    height: 248px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.6s;
+    &:hover {
+      transform: scale(1.06);
+    }
   }
 }
 .article {

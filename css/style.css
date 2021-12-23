@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 .catalog__item-link, .product__banner-text {
   font-family: "Montserrat-Regular, sans-serif";
@@ -113,6 +114,10 @@ body {
 
 .header-top {
   border-bottom: 1px solid #e5e5e5;
+  /*CSS-свойства для блока, содержащего контент модального окна */
+  /*CSS-свойства заголовка модального окна */
+  /*CSS для кнопки закрытия*/
+  /*CSS для блока с текстом*/
 }
 .header-top__inner {
   display: flex;
@@ -140,6 +145,134 @@ body {
 }
 .header-top__location img {
   margin-right: 3px;
+}
+.header-top .iw-modal {
+  opacity: 0;
+  /*изначально этот блок должен быть прозрачным*/
+  background: rgba(30, 30, 30, 0.25);
+  /*задаём цвет фона*/
+  pointer-events: none;
+  /*делаем чтобы по элементу нельзя было кликнуть когда он прозрачный*/
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  transition: all 0.5s ease;
+  margin: 0;
+  padding: 0;
+}
+.header-top .iw-modal:target {
+  opacity: 1;
+  /*при клике блок становится видимым*/
+  pointer-events: auto;
+  /*теперь по блоку можно кликать мышкой*/
+  overflow-y: auto;
+  /*прокрутка по вертикли страницы*/
+}
+.header-top .iw-modal-wrapper {
+  margin: auto;
+  /*выравниваем модальное окно по центру по горизонтали*/
+  margin-top: 25vh;
+  /*отступ сверху можно задавать в px, % или vh*/
+  max-width: 494px;
+  max-height: 491px;
+  height: 100%;
+  width: 100%;
+  background-color: #1c4e8a;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.header-top .iw-CSS-modal-inner {
+  position: relative;
+  background: #fff;
+  /*цвет фона*/
+  border-radius: 0px;
+  /*радиус скругления углов*/
+  border-radius: 5px;
+  padding: 38px 29px 42px;
+  height: 100%;
+}
+.header-top .iw-modal-header {
+  padding: 15px;
+  /*внутренний отступ*/
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1e1e1e;
+}
+.header-top__modal {
+  max-width: 100%;
+  width: 100%;
+}
+.header-top__input {
+  width: 100%;
+  padding: 10px 9px 11px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+}
+.header-top__input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #999999;
+}
+.header-top__input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #999999;
+}
+.header-top__input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #999999;
+}
+.header-top .iw-modal-title {
+  font-size: 18px;
+  /*размер шрифта*/
+  color: #555;
+  /*цвет шрифта*/
+  font-weight: bold;
+  /*жирность шрифта*/
+  line-height: 1.5;
+  /*высота строки*/
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.header-top .iw-close {
+  position: absolute;
+  top: 15px;
+  /*отступ сверху*/
+  right: 10px;
+  /*отступ справа*/
+  font-size: 24px;
+  /*размер шрифта*/
+  color: #555;
+  /*цвет шрифта*/
+  text-decoration: none;
+}
+.header-top .iw-close:hover,
+.header-top .iw-close:focus {
+  color: #000;
+  /*цвет шрифта при наведении*/
+  cursor: pointer;
+}
+.header-top .iw-modal-text {
+  padding: 0;
+  padding-top: 23px;
+}
+.header-top__modal-item {
+  margin-bottom: 13px;
+}
+.header-top__modal-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #1E1E1E;
 }
 
 .header-nav__inner {
@@ -618,6 +751,10 @@ body {
   width: 100%;
   padding: 49px 24px 10px 19px;
   height: 100%;
+  transition: all 0.6s;
+}
+.new__content-box:hover {
+  transform: scale(1.06);
 }
 .new__content-title {
   font-weight: 600;
@@ -650,6 +787,7 @@ body {
   position: relative;
   display: flex;
   z-index: 1;
+  transition: all 0.6s;
 }
 .new__item:before {
   position: absolute;
@@ -660,6 +798,9 @@ body {
   right: 0;
   background: linear-gradient(1.56deg, rgba(40, 40, 40, 0.71) 3.05%, rgba(30, 30, 30, 0) 55.29%);
   z-index: -1;
+}
+.new__item:hover {
+  transform: scale(1.09);
 }
 .new__item-link {
   font-weight: 600;
@@ -679,6 +820,23 @@ body {
   display: flex;
   -moz-column-gap: 20px;
        column-gap: 20px;
+}
+.new__block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 1;
+  max-width: 690px;
+  width: 100%;
+  padding: 5px 30px;
+  height: 248px;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.6s;
+}
+.new__block:hover {
+  transform: scale(1.06);
 }
 
 .article {
