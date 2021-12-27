@@ -7,6 +7,17 @@ body {
   //background: violet;
   background: #fff;
 }
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex-grow: 1;
+}
 .header-top {
   border-bottom: 1px solid #e5e5e5;
   &__inner {
@@ -43,7 +54,8 @@ body {
       margin-right: 3px;
     }
   }
-  .iw-modal {
+  .iw-modal,
+  &__modal-wrapper {
     opacity: 0; /*изначально этот блок должен быть прозрачным*/
     background: rgba(30, 30, 30, 0.25); /*задаём цвет фона*/
     pointer-events: none; /*делаем чтобы по элементу нельзя было кликнуть когда он прозрачный*/
@@ -57,12 +69,14 @@ body {
     margin: 0;
     padding: 0;
   }
-  .iw-modal:target {
+  .iw-modal:target,
+  &header-top__modal-wrapper:target {
     opacity: 1; /*при клике блок становится видимым*/
     pointer-events: auto; /*теперь по блоку можно кликать мышкой*/
     overflow-y: auto; /*прокрутка по вертикли страницы*/
   }
-  .iw-modal-wrapper {
+  .iw-modal-wrapper,
+  &__wrapper-modal {
     margin: auto; /*выравниваем модальное окно по центру по горизонтали*/
     margin-top: 25vh; /*отступ сверху можно задавать в px, % или vh*/
     max-width: 494px;
@@ -74,7 +88,8 @@ body {
     border-radius: 5px;
   }
   /*CSS-свойства для блока, содержащего контент модального окна */
-  .iw-CSS-modal-inner {
+  .iw-CSS-modal-inner,
+  &__inner-modal {
     position: relative;
     background: #fff; /*цвет фона*/
     //border: 5px solid rgb(162, 39, 39); /*цвет и толщина рамки*/
@@ -85,7 +100,8 @@ body {
     height: 100%;
   }
   /*CSS-свойства заголовка модального окна */
-  .iw-modal-header {
+  .iw-modal-header,
+  &__modal-header {
     padding: 15px; /*внутренний отступ*/
     //background: #a2b183; /*цвет фона*/
     position: relative;
@@ -149,6 +165,66 @@ body {
     font-size: 16px;
     line-height: 25px;
     color: $default;
+  }
+  &__wrapper {
+    //background-color: #437fc8;
+    display: flex;
+    justify-content: center;
+  }
+  &__close {
+    top: 0 !important;
+    right: 0 !important;
+  }
+  &__text {
+    @extend %Montserrat-Regular-400;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: $default;
+    margin-bottom: 18px;
+  }
+  &__phone {
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    padding: 10px 9px 11px;
+    outline: none;
+    &::placeholder {
+      @extend %Montserrat-Regular-400;
+      font-size: 16px;
+      line-height: 25px;
+      color: #999999;
+    }
+  }
+  &__span {
+    display: block;
+    margin-top: 15px;
+    @extend %Montserrat-Regular-400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #1e1e1e;
+    display: flex;
+    margin-bottom: 18px;
+  }
+  &__time {
+    margin: 0 3px;
+    @extend %Montserrat-Regular-400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #1e1e1e;
+  }
+  &__submit {
+    display: inline-block;
+    background: $link;
+    border-radius: 5px;
+    padding: 13px 22px 20px 29px;
+    @extend %Montserrat-SemiBold-600;
+    font-size: 16px;
+    line-height: 25px;
+    color: #fff;
+  }
+  &__wrapper-modal {
+    height: auto !important;
   }
 }
 .header-nav {

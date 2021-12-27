@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top__inner">
+            <a class="header-top__location iw-modal-btn" href="#iw-modal">
+              <img src="img/icon/location.svg" alt="location logo" />
+              Москва
+            </a>
+            <div id="iw-modal" class="iw-modal">
+              <div class="iw-modal-wrapper">
+                <div class="iw-CSS-modal-inner">
+                  <div class="iw-modal-header">
+                    <h3 class="iw-modal-title">Выберите город</h3>
+                    <a href="#close" title="Закрыть" class="iw-close">×</a>
+                  </div>
+                  <form class="header-top__modal" action="#">
+                    <input class="header-top__input" type="text" placeholder="Начните вводить">
+                  </form>
+                  <div class="iw-modal-text">
+                    <ul class="header-top__modal-list">
+                      <li class="header-top__modal-item"><a class="header-top__modal-link" href="#">Москва</a></li>
+                      <li class="header-top__modal-item"><a class="header-top__modal-link" href="#">Санкт-Петербург</a></li>
+                      <li class="header-top__modal-item"><a class="header-top__modal-link" href="#">Казань</a></li>
+                      <li class="header-top__modal-item"><a class="header-top__modal-link" href="#">Смоленск</a></li>
+                      <li class="header-top__modal-item"><a class="header-top__modal-link" href="#">Москва</a></li>
+                      <li class="header-top__modal-item"><a class="header-top__modal-link" href="#">Санкт-Петербург</a></li>
+                      <li class="header-top__modal-item"><a class="header-top__modal-link" href="#">Казань</a></li>
+                      <li class="header-top__modal-item"><a class="header-top__modal-link" href="#">Смоленск</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!---end.Разметка для модального окна---->
+            <ul class="header-top__list">
+              <li class="header-top__item">
+                <a class="header-top__link" href="#">Отзывы</a>
+              </li>
+              <li class="header-top__item">
+                <a class="header-top__link" href="#">О нас</a>
+              </li>
+              <li class="header-top__item">
+                <a class="header-top__link" href="#">Доставка</a>
+              </li>
+              <li class="header-top__item">
+                <a class="header-top__link" href="#">Оплата</a>
+              </li>
+              <li class="header-top__item">
+                <a class="header-top__link" href="#">Подключение техники</a>
+              </li>
+              <li class="header-top__item">
+                <a class="header-top__link" href="#">Доп. сервис</a>
+              </li>
+              <li class="header-top__item">
+                <a class="header-top__link" href="#">Наши гарантии</a>
+              </li>
+              <li class="header-top__item">
+                <a class="header-top__link" href="#">Почему мы?</a>
+              </li>
+              <li class="header-top__item">
+                <a class="header-top__link" href="#">Контакты</a>
+              </li>
+              <li class="header-top__item">
+                <a class="header-top__link" href="#">Оставить обращение</a>
+              </li>
+            </ul>
+            <a class="header-top__location header-top__iw-modal" href="#modal-btn">
+              <img src="img/icon/account.svg" alt="account logo" />
+              Личный кабинет
+            </a>
+            <div id="modal-btn" class="iw-modal">
+              <div class="iw-modal-wrapper header-top__wrapper-modal">
+                <div class="iw-CSS-modal-inner">
+                  <div class="iw-modal-header header-top__wrapper">
+                    <h3 class="iw-modal-title">Вход в личный кабинет</h3>
+                    <a class="iw-close header-top__close" href="#close" title="Закрыть">×</a>
+                  </div>
+                  <p class="header-top__text">Введите номер телефона. Вам будет выслан код с паролем  по смс</p>
+                  <form class="header-top__modal" action="#">
+                    <input class="header-top__phone" type="tel" placeholder="+77 __   __   __">
+                  </form>
+                  <span class="header-top__span">Код будет отправлен через <div class="header-top__time">50</div> секунд.....</span>
+                  <a class="header-top__submit" href="#">Повторить отправку</a>
+                </div>
+              </div>
+            </div>
+            <!---end.Разметка для модального окна---->
+          </div>
+        </div>
+      </div>
+      <div class="header-nav">
+        <div class="container">
+          <div class="header-nav__inner">
+            <a class="header-nav__logo" href="#">
+              <img src="img/icon/logo.png" alt="logo" />
+            </a>
+            <ul class="header-nav__list">
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="#">Техника</a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="#">Мебель</a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="#">Инструменты</a>
+              </li>
+            </ul>
+            <form class="header-nav__form" action="#">
+              <input
+                class="header-nav__text"
+                type="text"
+                placeholder="Что будем искать?"
+              />
+              <input class="header-nav__button" type="submit" />
+            </form>
+            <ul class="header-nav__social">
+              <li class="header-nav__social-item">
+                <a class="header-nav__social-link" href="#">
+                  <img src="img/icon/viber.svg" alt="viber logo" />
+                </a>
+              </li>
+              <li class="header-nav__social-item">
+                <a class="header-nav__social-link" href="#">
+                  <img src="img/icon/telegram.svg" alt="telegram logo" />
+                </a>
+              </li>
+            </ul>
+            <div class="header-nav__contact">
+              <a class="header-nav__phone" href="tel:+74951509555"
+                >+7(495)150-95-55</a
+              >
+              <span class="header-nav__span">9:00 - 22:00 без выходных</span>
+            </div>
+            <div class="header-nav__order">
+              <a class="header-nav__cart" href="#">
+                <div class="header-nav__count">1</div>
+                <img src="img/icon/order.svg" alt="order logo" />
+              </a>
+              <div class="header-nav__info">
+                <p class="header-nav__info-title">Корзина</p>
+                <div class="header-nav__num">7500 ₽</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-menu">
+        <div class="container">
+          <div class="header-menu__inner">
+            <a class="header-menu__category" href="#">
+              <img src="img/icon/category.svg" alt="category logo" />
+              Все категории
+            </a>
+            <ul class="header-menu__list">
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="#">Бытовая техника</a>
+              </li>
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="#">Видео и аудио</a>
+              </li>
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="#">Климат</a>
+              </li>
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="#">Компьютерная техника</a>
+              </li>
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="#">Дом и дача</a>
+              </li>
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="#">Спорт и отдых</a>
+              </li>
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="#">Инструмент</a>
+              </li>
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="#">Авто</a>
+              </li>
+            </ul>
+            <a class="header-menu__sale" href="#">% Распродажа</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main"></main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-top__content">
+            <a class="footer-top__logo" href="#">
+              <img src="img/icon/logo.png" alt="footer logo" />
+            </a>
+            <a class="footer-top__phone" href="tel:+74951509555"
+              >+7(495)150-95-55</a
+            >
+            <ul class="footer-top__social">
+              <li class="footer-top__social-item">
+                <a class="footer-top__social-link" href="#">
+                  <svg
+                    width="26"
+                    height="23"
+                    viewBox="0 0 26 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M25.5985 0.682037C25.2809 0.278702 24.8052 0.0566406 24.2589 0.0566406C23.962 0.0566406 23.6474 0.121529 23.324 0.249863L1.31553 8.97431C0.147563 9.43718 -0.00974006 10.1318 0.0003765 10.5046C0.0104931 10.8775 0.205485 11.5618 1.39686 11.9555C1.404 11.9577 1.41114 11.96 1.41828 11.962L5.98344 13.3187L8.45228 20.65C8.78891 21.6495 9.54448 22.2704 10.4244 22.2704C10.9792 22.2704 11.5249 22.029 12.0026 21.5725L14.8263 18.8725L18.9219 22.2972C18.9223 22.2976 18.9229 22.2978 18.9233 22.2982L18.9622 22.3307C18.9658 22.3336 18.9696 22.3367 18.9731 22.3396C19.4284 22.7063 19.9253 22.8999 20.4107 22.9001H20.4109C21.3592 22.9001 22.1144 22.1711 22.3344 21.0431L25.9405 2.55225C26.0853 1.81006 25.9639 1.14594 25.5985 0.682037ZM7.51065 13.061L16.3182 8.38847L10.834 14.4399C10.7442 14.539 10.6805 14.6604 10.6492 14.7924L9.59169 19.2406L7.51065 13.061ZM10.9705 20.4086C10.934 20.4434 10.8973 20.4745 10.8606 20.5032L11.8417 16.3767L13.6264 17.8691L10.9705 20.4086ZM24.4474 2.23811L20.8413 20.7291C20.8066 20.9061 20.6957 21.3179 20.4107 21.3179C20.2698 21.3179 20.0929 21.2381 19.9118 21.0933L15.2709 17.2128C15.2703 17.2122 15.2695 17.2116 15.2687 17.2112L12.5072 14.902L20.438 6.15076C20.692 5.87061 20.715 5.44152 20.4926 5.13377C20.27 4.82601 19.8668 4.72919 19.5369 4.90429L6.49284 11.8244L1.8656 10.4496L23.8674 1.72787C24.0532 1.65412 24.183 1.63867 24.2589 1.63867C24.3056 1.63867 24.3885 1.64444 24.4192 1.68378C24.4597 1.73508 24.5113 1.90997 24.4474 2.23811Z"
+                      fill="#6E6E6E"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-top__social-item">
+                <a class="footer-top__social-link" href="#">
+                  <svg
+                    width="27"
+                    height="17"
+                    viewBox="0 0 27 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.6631 16.9375C17.5691 16.9375 16.1764 14.4648 16.4779 13.7537C16.4734 13.2227 16.4689 12.712 16.4869 12.4015C16.7344 12.4713 17.3182 12.7671 18.5243 13.9394C20.3861 15.8181 20.862 16.9375 22.3661 16.9375H25.1347C26.0122 16.9375 26.469 16.5741 26.6974 16.2693C26.9179 15.9745 27.1339 15.457 26.8976 14.6515C26.28 12.712 22.6777 9.36287 22.4539 9.00963C22.4876 8.94438 22.5416 8.85775 22.5697 8.81275H22.5675C23.2785 7.87337 25.992 3.80762 26.3914 2.18087C26.3925 2.17862 26.3936 2.17525 26.3936 2.17188C26.6096 1.42937 26.4116 0.947875 26.2069 0.675625C25.8986 0.268375 25.4081 0.0625 24.7455 0.0625H21.9769C21.0499 0.0625 20.3468 0.529375 19.9913 1.381C19.3961 2.89412 17.7244 6.00588 16.4711 7.10725C16.4329 5.54688 16.4587 4.3555 16.479 3.47012C16.5195 1.74325 16.65 0.0625 14.8579 0.0625H10.5064C9.38363 0.0625 8.30925 1.28875 9.4725 2.7445C10.4895 4.02025 9.83812 4.73125 10.0575 8.2705C9.2025 7.35362 7.6815 4.8775 6.606 1.71288C6.3045 0.85675 5.84775 0.0636249 4.56187 0.0636249H1.79325C0.6705 0.0636249 0 0.675625 0 1.7005C0 4.00225 5.09513 16.9375 13.6631 16.9375ZM4.56187 1.75112C4.806 1.75112 4.83075 1.75113 5.01188 2.26525C6.11325 5.50863 8.58375 10.3079 10.3883 10.3079C11.7439 10.3079 11.7439 8.9185 11.7439 8.39537L11.7428 4.23063C11.6685 2.8525 11.1668 2.16625 10.8371 1.75L14.7836 1.7545C14.7859 1.77363 14.7611 6.36137 14.7949 7.47287C14.7949 9.05125 16.0481 9.95575 18.0045 7.97575C20.0689 5.64588 21.4965 2.16288 21.5539 2.02113C21.6383 1.81863 21.7114 1.75 21.9769 1.75H24.7455H24.7568C24.7556 1.75338 24.7556 1.75675 24.7545 1.76012C24.5014 2.94137 22.0028 6.70563 21.1669 7.8745C21.1534 7.8925 21.141 7.91163 21.1286 7.93075C20.7607 8.5315 20.4615 9.19525 21.1793 10.129H21.1804C21.2456 10.2078 21.4155 10.3923 21.663 10.6488C22.4325 11.443 25.0717 14.1587 25.3057 15.2387C25.1505 15.2635 24.9818 15.2455 22.3661 15.2511C21.8092 15.2511 21.3739 14.4186 19.7122 12.7424C18.2183 11.2889 17.2485 10.6949 16.3654 10.6949C14.6509 10.6949 14.7758 12.0865 14.7915 13.7695C14.7971 15.5942 14.7859 15.0171 14.7983 15.1319C14.6981 15.1713 14.4113 15.25 13.6631 15.25C6.525 15.25 1.8765 3.92013 1.69762 1.7545C1.7595 1.74888 2.61112 1.75225 4.56187 1.75112Z"
+                      fill="#6E6E6E"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-top__social-item">
+                <a class="footer-top__social-link" href="#">
+                  <svg
+                    width="26"
+                    height="25"
+                    viewBox="0 0 26 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24.2911 8.82359C24.2913 6.47564 23.371 4.26235 21.7 2.59132C20.0289 0.920296 17.8157 0 15.4675 0H10.2395C10.2393 0 10.2393 0 10.2393 0C7.89153 0 5.67805 0.920296 4.00722 2.59113C2.33619 4.26235 1.41589 6.47564 1.41589 8.82359V12.9332C1.41589 14.7516 1.97055 16.5007 3.01997 17.9916C3.9458 19.3069 5.19092 20.3344 6.6426 20.9858V23.3463C6.6426 24.5668 7.326 25 7.91118 25C8.32927 25 8.74736 24.7936 9.15439 24.3868L11.7842 21.7569L15.4677 21.7567C17.8157 21.7567 20.0289 20.8364 21.7 19.1656C23.371 17.4946 24.2913 15.2811 24.2913 12.9332L24.2911 8.82359ZM15.4677 20.2919L11.481 20.2921C11.2866 20.2921 11.1005 20.3691 10.9631 20.5065L8.1187 23.3509C8.11507 23.3547 8.11126 23.3583 8.10744 23.362C8.10744 23.3568 8.10744 23.3515 8.10744 23.3463V20.4969C8.10744 20.1931 7.91995 19.9209 7.63614 19.8126C4.7919 18.7273 2.88093 15.9626 2.88093 12.9332V8.82359C2.88093 6.86684 3.64883 5.02129 5.0431 3.62682C6.43737 2.23274 8.28273 1.46484 10.2395 1.46484H15.4675C17.4243 1.46484 19.2698 2.23274 20.6641 3.62701C22.0586 5.02148 22.8265 6.86703 22.8263 8.82359L22.8265 12.9332C22.8263 16.9909 19.5252 20.2919 15.4677 20.2919Z"
+                      fill="#6E6E6E"
+                    />
+                    <path
+                      d="M14.8013 11.9797C14.5154 11.6936 14.0517 11.6936 13.7656 11.9797L13.1739 12.5711L10.8813 10.2787L11.473 9.68721C11.6103 9.54988 11.6875 9.36353 11.6875 9.16917C11.6875 8.97501 11.6103 8.78866 11.473 8.65133L8.69929 5.87766C8.56196 5.74033 8.37581 5.66309 8.18145 5.66309C7.98728 5.66309 7.80093 5.74033 7.6636 5.87766L5.72192 7.81934C4.67193 8.86934 4.67193 10.5781 5.72211 11.6287L11.8239 17.7309C12.3313 18.238 13.0078 18.5173 13.7286 18.5173C14.4496 18.5173 15.1261 18.238 15.6335 17.7309L17.5751 15.7894C17.7125 15.6519 17.7897 15.4657 17.7897 15.2714C17.7897 15.0772 17.7125 14.8908 17.5751 14.7535L14.8013 11.9797ZM14.5976 16.6948C14.367 16.9254 14.0584 17.0524 13.7286 17.0524C13.3988 17.0524 13.0902 16.9254 12.8596 16.6948L6.75799 10.5928C6.27887 10.1137 6.27868 9.33397 6.7578 8.85503L8.18145 7.4312L9.91923 9.16917L9.32757 9.76064C9.19024 9.89797 9.113 10.0843 9.113 10.2785C9.113 10.4728 9.19024 10.659 9.32757 10.7965L12.6559 14.1248C12.942 14.4108 13.4057 14.4109 13.6918 14.1248L14.2834 13.5334L16.0212 15.2712L14.5976 16.6948Z"
+                      fill="#6E6E6E"
+                    />
+                    <path
+                      d="M13.0312 3.24023C12.6267 3.24023 12.2988 3.56811 12.2988 3.97266C12.2988 4.37701 12.6267 4.70508 13.0312 4.70508C14.7074 4.70508 16.2835 5.35777 17.4687 6.54319C18.6541 7.72842 19.3068 9.30427 19.3068 10.9806C19.3068 11.385 19.6347 11.7131 20.0392 11.7131C20.4436 11.7131 20.7717 11.3852 20.7717 10.9806C20.7717 8.91307 19.9666 6.96929 18.5046 5.50731C17.0426 4.04533 15.0988 3.24023 13.0312 3.24023Z"
+                      fill="#6E6E6E"
+                    />
+                    <path
+                      d="M16.1688 10.9802C16.1688 11.3845 16.4969 11.7126 16.9013 11.7126C17.3058 11.7126 17.6337 11.3845 17.6337 10.9802C17.6337 8.44244 15.569 6.37793 13.0312 6.37793C12.6267 6.37793 12.2988 6.7058 12.2988 7.11035C12.2988 7.5149 12.6267 7.84277 13.0312 7.84277C14.7614 7.84277 16.1688 9.25021 16.1688 10.9802Z"
+                      fill="#6E6E6E"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-top__social-item">
+                <a class="footer-top__social-link" href="#">
+                  <svg
+                    width="17"
+                    height="24"
+                    viewBox="0 0 17 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.5007 0C5.05382 0 2.2507 2.691 2.2507 6C2.2507 9.309 5.05382 12 8.5007 12C11.9476 12 14.7507 9.309 14.7507 6C14.7507 2.691 11.9476 0 8.5007 0ZM8.5007 10.5C5.91632 10.5 3.8132 8.481 3.8132 6C3.8132 3.519 5.91632 1.5 8.5007 1.5C11.0851 1.5 13.1882 3.519 13.1882 6C13.1882 8.481 11.0851 10.5 8.5007 10.5Z"
+                      fill="#6E6E6E"
+                    />
+                    <path
+                      d="M14.6102 22.8193L9.14144 15.3193C8.85081 14.9203 8.1555 14.9203 7.86175 15.3193L2.393 22.8193C2.14612 23.1583 2.2305 23.6263 2.58519 23.8633C2.93831 24.1018 3.42581 24.0193 3.67269 23.6803L8.50081 17.0578L13.3305 23.6803C13.4821 23.8888 13.7243 23.9998 13.9696 23.9998C14.1258 23.9998 14.2805 23.9563 14.4196 23.8633C14.7727 23.6263 14.8586 23.1598 14.6102 22.8193Z"
+                      fill="#6E6E6E"
+                    />
+                    <path
+                      d="M16.2335 12.3629C15.9289 12.0704 15.4335 12.0704 15.1289 12.3629C11.471 15.8729 5.52573 15.8729 1.87105 12.3629C1.56636 12.0704 1.07104 12.0704 0.766357 12.3629C0.46167 12.6554 0.46167 13.1309 0.766357 13.4234C2.89917 15.4694 5.70073 16.4939 8.50073 16.4939C11.3007 16.4939 14.1023 15.4694 16.2335 13.4234C16.5382 13.1309 16.5382 12.6554 16.2335 12.3629Z"
+                      fill="#6E6E6E"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <p class="footer-top__info">ООО"БТ МАРКЕТ", ИНН 7728483067</p>
+            <p class="footer-top__address">
+              Москва, пр-д Соловьиный д. 2, ком. 1
+            </p>
+          </div>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Как оформить заказ</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Доставка</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Оплата</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Прием товара</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Почему покупать у нас</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Подключение техники</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Отзывы о нас</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#"
+                >Пользовательское соглашение</a
+              >
+            </li>
+          </ul>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">О компании</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Доставка</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Юридическая информация</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Для поставщиков</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Для оптовых клиентов</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Оставить обращение</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#"
+                >Политика конфиденциальности</a
+              >
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Новости и обзоры</a>
+            </li>
+          </ul>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Вопрос-ответ</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Дополнительный сервис</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Проверка на битые пиксели</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Утилизация техники</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Гарантийное обслуживание</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Сервисные центры</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Наши гарантии</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Обмен и возврат товара</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="footer-bottom__title">
+            Обращаем Ваше внимание на то, что данный интернет-сайт носит
+            исключительно информационный характер и ни при каких условиях
+            информационные материалы и цены, размещенные на сайте, не являются
+            публичной офертой, определяемой положениями Статьи 437 Гражданского
+            кодекса РФ.
+          </p>
+          <div class="footer-bottom__content">
+            <a class="footer-bottom__link" href="#">elecity.ru</a>
+            <span class="footer-bottom__copyright"> © 2011-2021</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

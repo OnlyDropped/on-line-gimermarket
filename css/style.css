@@ -1,6 +1,16 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
-.catalog__item-link, .product__banner-text {
+.header-top__phone::-moz-placeholder {
+  font-family: "Montserrat-Regular, sans-serif";
+  font-style: normal;
+  font-weight: 400;
+}
+.header-top__phone:-ms-input-placeholder {
+  font-family: "Montserrat-Regular, sans-serif";
+  font-style: normal;
+  font-weight: 400;
+}
+.catalog__item-link, .product__banner-text, .header-top__time, .header-top__span, .header-top__phone::placeholder, .header-top__text {
   font-family: "Montserrat-Regular, sans-serif";
   font-style: normal;
   font-weight: 400;
@@ -10,6 +20,12 @@
   font-family: "Montserrat-Medium, sans-serif";
   font-style: normal;
   font-weight: 500;
+}
+
+.header-top__submit {
+  font-family: "Montserrat-SemiBold, sans-serif";
+  font-style: normal;
+  font-weight: 600;
 }
 
 @font-face {
@@ -112,6 +128,20 @@ body {
   background: #fff;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+}
+
 .header-top {
   border-bottom: 1px solid #e5e5e5;
   /*CSS-свойства для блока, содержащего контент модального окна */
@@ -146,7 +176,7 @@ body {
 .header-top__location img {
   margin-right: 3px;
 }
-.header-top .iw-modal {
+.header-top .iw-modal, .header-top__modal-wrapper {
   opacity: 0;
   /*изначально этот блок должен быть прозрачным*/
   background: rgba(30, 30, 30, 0.25);
@@ -163,7 +193,7 @@ body {
   margin: 0;
   padding: 0;
 }
-.header-top .iw-modal:target {
+.header-top .iw-modal:target, .header-topheader-top__modal-wrapper:target {
   opacity: 1;
   /*при клике блок становится видимым*/
   pointer-events: auto;
@@ -171,7 +201,7 @@ body {
   overflow-y: auto;
   /*прокрутка по вертикли страницы*/
 }
-.header-top .iw-modal-wrapper {
+.header-top .iw-modal-wrapper, .header-top__wrapper-modal {
   margin: auto;
   /*выравниваем модальное окно по центру по горизонтали*/
   margin-top: 25vh;
@@ -184,7 +214,7 @@ body {
   overflow: hidden;
   border-radius: 5px;
 }
-.header-top .iw-CSS-modal-inner {
+.header-top .iw-CSS-modal-inner, .header-top__inner-modal {
   position: relative;
   background: #fff;
   /*цвет фона*/
@@ -194,7 +224,7 @@ body {
   padding: 38px 29px 42px;
   height: 100%;
 }
-.header-top .iw-modal-header {
+.header-top .iw-modal-header, .header-top__modal-header {
   padding: 15px;
   /*внутренний отступ*/
   position: relative;
@@ -273,6 +303,70 @@ body {
   font-size: 16px;
   line-height: 25px;
   color: #1E1E1E;
+}
+.header-top__wrapper {
+  display: flex;
+  justify-content: center;
+}
+.header-top__close {
+  top: 0 !important;
+  right: 0 !important;
+}
+.header-top__text {
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: #1E1E1E;
+  margin-bottom: 18px;
+}
+.header-top__phone {
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  padding: 10px 9px 11px;
+  outline: none;
+}
+.header-top__phone::-moz-placeholder {
+  font-size: 16px;
+  line-height: 25px;
+  color: #999999;
+}
+.header-top__phone:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 25px;
+  color: #999999;
+}
+.header-top__phone::placeholder {
+  font-size: 16px;
+  line-height: 25px;
+  color: #999999;
+}
+.header-top__span {
+  display: block;
+  margin-top: 15px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #1e1e1e;
+  display: flex;
+  margin-bottom: 18px;
+}
+.header-top__time {
+  margin: 0 3px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #1e1e1e;
+}
+.header-top__submit {
+  display: inline-block;
+  background: #437FC8;
+  border-radius: 5px;
+  padding: 13px 22px 20px 29px;
+  font-size: 16px;
+  line-height: 25px;
+  color: #fff;
+}
+.header-top__wrapper-modal {
+  height: auto !important;
 }
 
 .header-nav__inner {

@@ -79,22 +79,23 @@
                 <a class="header-top__link" href="#">Оставить обращение</a>
               </li>
             </ul>
-            <a class="header-top__account iw-modal-btn" href="#iw-modal">
+            <a class="header-top__location header-top__iw-modal" href="#modal-btn">
               <img src="img/icon/account.svg" alt="account logo" />
               Личный кабинет
             </a>
-            <div id="iw-modal" class="iw-modal">
-              <div class="iw-modal-wrapper">
+            <div id="modal-btn" class="iw-modal">
+              <div class="iw-modal-wrapper header-top__wrapper-modal">
                 <div class="iw-CSS-modal-inner">
-                  <div class="iw-modal-header">
+                  <div class="iw-modal-header header-top__wrapper">
                     <h3 class="iw-modal-title">Вход в личный кабинет</h3>
-                    <a href="#close" title="Закрыть" class="iw-close">×</a>
+                    <a class="iw-close header-top__close" href="#close" title="Закрыть">×</a>
                   </div>
+                  <p class="header-top__text">Введите номер телефона. Вам будет выслан код с паролем  по смс</p>
                   <form class="header-top__modal" action="#">
-                    <input class="header-top__input" type="text" placeholder="Начните вводить">
+                    <input class="header-top__phone" type="tel" placeholder="+77 __   __   __">
                   </form>
-                  <div class="iw-modal-text">
-                  </div>
+                  <span class="header-top__span">Код будет отправлен через <div class="header-top__time">50</div> секунд.....</span>
+                  <a class="header-top__submit" href="#">Повторить отправку</a>
                 </div>
               </div>
             </div>
