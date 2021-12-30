@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top__inner">
+            <a class="header-top__location iw-modal-btn" href="#iw-modal">
+              <img src="img/icon/location.svg" alt="location logo" />
+              Москва
+            </a>
+            <div id="iw-modal" class="iw-modal">
+              <div class="iw-modal-wrapper">
+                <div class="iw-CSS-modal-inner">
+                  <div class="iw-modal-header">
+                    <h3 class="iw-modal-title">Выберите город</h3>
+                    <a href="#close" title="Закрыть" class="iw-close">×</a>
+                  </div>
+                  <form class="header-top__modal" action="#">
+                    <input class="header-top__input" type="text" placeholder="Начните вводить">
+                  </form>
+                  <div class="iw-modal-text">
+                    <ul class="header-top__modal-list">
+                      <li class="header-top__modal-item"><a class="header-top__modal-link" href="#">Москва</a></li>
+                      <li class="header-top__modal-item"><a class="header-top__modal-link" href="#">Санкт-Петербург</a></li>
+                      <li class="header-top__modal-item"><a class="header-top__modal-link" href="#">Казань</a></li>
+                      <li class="header-top__modal-item"><a class="header-top__modal-link" href="#">Смоленск</a></li>
+                      <li class="header-top__modal-item"><a class="header-top__modal-link" href="#">Москва</a></li>
+                      <li class="header-top__modal-item"><a class="header-top__modal-link" href="#">Санкт-Петербург</a></li>
+                      <li class="header-top__modal-item"><a class="header-top__modal-link" href="#">Казань</a></li>
+                      <li class="header-top__modal-item"><a class="header-top__modal-link" href="#">Смоленск</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!---end.Разметка для модального окна---->
+            <ul class="header-top__list">
+              <li class="header-top__item">
+                <a class="header-top__link" href="#">Отзывы</a>
+              </li>
+              <li class="header-top__item">
+                <a class="header-top__link" href="#">О нас</a>
+              </li>
+              <li class="header-top__item">
+                <a class="header-top__link" href="#">Доставка</a>
+              </li>
+              <li class="header-top__item">
+                <a class="header-top__link" href="#">Оплата</a>
+              </li>
+              <li class="header-top__item">
+                <a class="header-top__link" href="#">Подключение техники</a>
+              </li>
+              <li class="header-top__item">
+                <a class="header-top__link" href="#">Доп. сервис</a>
+              </li>
+              <li class="header-top__item">
+                <a class="header-top__link" href="#">Наши гарантии</a>
+              </li>
+              <li class="header-top__item">
+                <a class="header-top__link" href="#">Почему мы?</a>
+              </li>
+              <li class="header-top__item">
+                <a class="header-top__link" href="#">Контакты</a>
+              </li>
+              <li class="header-top__item">
+                <a class="header-top__link" href="#">Оставить обращение</a>
+              </li>
+            </ul>
+            <a class="header-top__location header-top__iw-modal" href="#modal-btn">
+              <img src="img/icon/account.svg" alt="account logo" />
+              Личный кабинет
+            </a>
+            <div id="modal-btn" class="iw-modal">
+              <div class="iw-modal-wrapper header-top__wrapper-modal">
+                <div class="iw-CSS-modal-inner">
+                  <div class="iw-modal-header header-top__wrapper">
+                    <h3 class="iw-modal-title">Вход в личный кабинет</h3>
+                    <a class="iw-close header-top__close" href="#close" title="Закрыть">×</a>
+                  </div>
+                  <p class="header-top__text">Введите номер телефона. Вам будет выслан код с паролем  по смс</p>
+                  <form class="header-top__modal" action="#">
+                    <input class="header-top__phone" type="tel" placeholder="+77 __   __   __">
+                  </form>
+                  <span class="header-top__span">Код будет отправлен через <div class="header-top__time">50</div> секунд.....</span>
+                  <a class="header-top__submit" href="#">Повторить отправку</a>
+                </div>
+              </div>
+            </div>
+            <!---end.Разметка для модального окна---->
+          </div>
+        </div>
+      </div>
+      <div class="header-nav">
+        <div class="container">
+          <div class="header-nav__inner">
+            <a class="header-nav__logo" href="#">
+              <img src="img/icon/logo.png" alt="logo" />
+            </a>
+            <ul class="header-nav__list">
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="#">Техника</a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="#">Мебель</a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="#">Инструменты</a>
+              </li>
+            </ul>
+            <form class="header-nav__form" action="#">
+              <input
+                class="header-nav__text"
+                type="text"
+                placeholder="Что будем искать?"
+              />
+              <input class="header-nav__button" type="submit" />
+            </form>
+            <ul class="header-nav__social">
+              <li class="header-nav__social-item">
+                <a class="header-nav__social-link" href="#">
+                  <img src="img/icon/viber.svg" alt="viber logo" />
+                </a>
+              </li>
+              <li class="header-nav__social-item">
+                <a class="header-nav__social-link" href="#">
+                  <img src="img/icon/telegram.svg" alt="telegram logo" />
+                </a>
+              </li>
+            </ul>
+            <div class="header-nav__contact">
+              <a class="header-nav__phone" href="tel:+74951509555"
+                >+7(495)150-95-55</a
+              >
+              <span class="header-nav__span">9:00 - 22:00 без выходных</span>
+            </div>
+            <div class="header-nav__order">
+              <a class="header-nav__cart" href="#">
+                <div class="header-nav__count">1</div>
+                <img src="img/icon/order.svg" alt="order logo" />
+              </a>
+              <div class="header-nav__info">
+                <p class="header-nav__info-title">Корзина</p>
+                <div class="header-nav__num">7500 ₽</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-menu">
+        <div class="container">
+          <div class="header-menu__inner">
+            <a class="header-menu__category" href="#">
+              <img src="img/icon/category.svg" alt="category logo" />
+              Все категории
+            </a>
+            <ul class="header-menu__list">
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="#">Бытовая техника</a>
+              </li>
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="#">Видео и аудио</a>
+              </li>
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="#">Климат</a>
+              </li>
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="#">Компьютерная техника</a>
+              </li>
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="#">Дом и дача</a>
+              </li>
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="#">Спорт и отдых</a>
+              </li>
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="#">Инструмент</a>
+              </li>
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="#">Авто</a>
+              </li>
+            </ul>
+            <a class="header-menu__sale" href="#">% Распродажа</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="breadcrumbs">
+        <div class="container">
+          <div class="breadcrumbs__inner">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Крупная бытовая техника</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--active" href="#">Холодильники</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="catalog">
+        <div class="container">
+          <h1 class="title">Холодильники</h1>
+          <ul class="catalog__filter">
+            <li class="catalog__filter-item"><a class="catalog__filter-link" href="#">Инверторные</a></li>
+            <li class="catalog__filter-item"><a class="catalog__filter-link" href="#">Инверторные с дисплеем</a></li>
+            <li class="catalog__filter-item"><a class="catalog__filter-link" href="#">Недорогие</a></li>
+            <li class="catalog__filter-item"><a class="catalog__filter-link" href="#">Ширина 50 см</a></li>
+            <li class="catalog__filter-item"><a class="catalog__filter-link" href="#">Ещё</a></li>
+          </ul>
+          <div class="catalog-content">
+            <div class="catalog-filter">
+              <div class="catalog-filter__item">
+                <h6 class="catalog-filter__title">Производитель <div class="catalog-filter__number">(245)</div></h6>
+                <form class="catalog-filter__form" action="#">
+                  <label class="catalog-filter__label">
+                    <input class="catalog-filter__input" type="checkbox">
+                      <div class="catalog-filter__box">
+                        <svg class="catalog-filter__checkmark" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 10 10" version="1.1">
+                        <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 3.394531 8.582031 L 0.144531 5.332031 C -0.046875 5.136719 -0.046875 4.820312 0.144531 4.625 L 0.855469 3.917969 C 1.046875 3.722656 1.367188 3.722656 1.5625 3.917969 L 3.75 6.105469 L 8.4375 1.417969 C 8.632812 1.222656 8.953125 1.222656 9.144531 1.417969 L 9.855469 2.125 C 10.046875 2.320312 10.046875 2.636719 9.855469 2.832031 L 4.105469 8.582031 C 3.910156 8.777344 3.589844 8.777344 3.394531 8.582031 Z M 3.394531 8.582031 "/>
+                      </svg>
+                      </div>
+                      Atlant <div class="catalog-filter__num">(33)</div>
+                  </label>
+                  <label class="catalog-filter__label">
+                    <input class="catalog-filter__input" type="checkbox">
+                      <div class="catalog-filter__box">
+                        <svg class="catalog-filter__checkmark" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 10 10" version="1.1">
+                        <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 3.394531 8.582031 L 0.144531 5.332031 C -0.046875 5.136719 -0.046875 4.820312 0.144531 4.625 L 0.855469 3.917969 C 1.046875 3.722656 1.367188 3.722656 1.5625 3.917969 L 3.75 6.105469 L 8.4375 1.417969 C 8.632812 1.222656 8.953125 1.222656 9.144531 1.417969 L 9.855469 2.125 C 10.046875 2.320312 10.046875 2.636719 9.855469 2.832031 L 4.105469 8.582031 C 3.910156 8.777344 3.589844 8.777344 3.394531 8.582031 Z M 3.394531 8.582031 "/>
+                      </svg>
+                      </div>
+                      Samsung
+                      <div class="catalog-filter__num">(57)</div>
+                  </label>
+                  <label class="catalog-filter__label">
+                    <input class="catalog-filter__input" type="checkbox">
+                      <div class="catalog-filter__box">
+                        <svg class="catalog-filter__checkmark" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 10 10" version="1.1">
+                        <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 3.394531 8.582031 L 0.144531 5.332031 C -0.046875 5.136719 -0.046875 4.820312 0.144531 4.625 L 0.855469 3.917969 C 1.046875 3.722656 1.367188 3.722656 1.5625 3.917969 L 3.75 6.105469 L 8.4375 1.417969 C 8.632812 1.222656 8.953125 1.222656 9.144531 1.417969 L 9.855469 2.125 C 10.046875 2.320312 10.046875 2.636719 9.855469 2.832031 L 4.105469 8.582031 C 3.910156 8.777344 3.589844 8.777344 3.394531 8.582031 Z M 3.394531 8.582031 "/>
+                      </svg>
+                      </div>
+                      LG<div class="catalog-filter__num">(4)</div>
+                  </label>
+                  <label class="catalog-filter__label">
+                    <input class="catalog-filter__input" type="checkbox">
+                      <div class="catalog-filter__box">
+                        <svg class="catalog-filter__checkmark" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 10 10" version="1.1">
+                        <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 3.394531 8.582031 L 0.144531 5.332031 C -0.046875 5.136719 -0.046875 4.820312 0.144531 4.625 L 0.855469 3.917969 C 1.046875 3.722656 1.367188 3.722656 1.5625 3.917969 L 3.75 6.105469 L 8.4375 1.417969 C 8.632812 1.222656 8.953125 1.222656 9.144531 1.417969 L 9.855469 2.125 C 10.046875 2.320312 10.046875 2.636719 9.855469 2.832031 L 4.105469 8.582031 C 3.910156 8.777344 3.589844 8.777344 3.394531 8.582031 Z M 3.394531 8.582031 "/>
+                      </svg>
+                      </div>
+                      Bosh<div class="catalog-filter__num">(7)</div>
+                  </label>
+                  <label class="catalog-filter__label">
+                    <input class="catalog-filter__input" type="checkbox">
+                      <div class="catalog-filter__box">
+                        <svg class="catalog-filter__checkmark" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 10 10" version="1.1">
+                        <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 3.394531 8.582031 L 0.144531 5.332031 C -0.046875 5.136719 -0.046875 4.820312 0.144531 4.625 L 0.855469 3.917969 C 1.046875 3.722656 1.367188 3.722656 1.5625 3.917969 L 3.75 6.105469 L 8.4375 1.417969 C 8.632812 1.222656 8.953125 1.222656 9.144531 1.417969 L 9.855469 2.125 C 10.046875 2.320312 10.046875 2.636719 9.855469 2.832031 L 4.105469 8.582031 C 3.910156 8.777344 3.589844 8.777344 3.394531 8.582031 Z M 3.394531 8.582031 "/>
+                      </svg>
+                      </div>
+                      Liebherr<div class="catalog-filter__num">(13)</div>
+                  </label>
+                </form>
+                <a class="catalog-filter__all" href="#">
+                  Все <div class="catalog-filter__all-number">123</div> варианта
+                  <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.5655 4.08207C20.7607 3.88681 20.7607 3.57022 20.5655 3.37496L17.3835 0.192982C17.1882 -0.00228047 16.8716 -0.00228047 16.6764 0.192982C16.4811 0.388244 16.4811 0.704826 16.6764 0.900089L19.5048 3.72852L16.6764 6.55694C16.4811 6.7522 16.4811 7.06879 16.6764 7.26405C16.8716 7.45931 17.1882 7.45931 17.3835 7.26405L20.5655 4.08207ZM0.211914 4.22852H20.2119V3.22852H0.211914V4.22852Z" fill="#6E6E6E"/>
+                  </svg>
+                </a>
+              </div>
+              <div class="catalog-filter__item">
+                <h6 class="catalog-filter__title">Цена</h6>
+                <form class="catalog-filter__form" action="#">
+                    <input class="catalog-filter__text-price" 
+                    type="text"
+                    data-min="0"
+                    data-max="150000"
+                    data-from="5680"
+                    data-to="150000"
+                    data-grid="true"
+                    >
+                    <label class="catalog-filter__label">
+                      <div class="catalog-filter__price">
+                        от<span class="catalog-filter__from"></span>
+                        до<span class="catalog-filter__to"></span>
+                      </div>
+                    </label>
+                </form>
+              </div>
+              <div class="catalog-filter__item">
+                <h6 class="catalog-filter__title">Вид холодильника<div class="catalog-filter__number">(245)</div></h6>
+                <form class="catalog-filter__form" action="#">
+                  <label class="catalog-filter__label">
+                    <input class="catalog-filter__input" type="checkbox">
+                      <div class="catalog-filter__box">
+                        <svg class="catalog-filter__checkmark" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 10 10" version="1.1">
+                        <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 3.394531 8.582031 L 0.144531 5.332031 C -0.046875 5.136719 -0.046875 4.820312 0.144531 4.625 L 0.855469 3.917969 C 1.046875 3.722656 1.367188 3.722656 1.5625 3.917969 L 3.75 6.105469 L 8.4375 1.417969 C 8.632812 1.222656 8.953125 1.222656 9.144531 1.417969 L 9.855469 2.125 C 10.046875 2.320312 10.046875 2.636719 9.855469 2.832031 L 4.105469 8.582031 C 3.910156 8.777344 3.589844 8.777344 3.394531 8.582031 Z M 3.394531 8.582031 "/>
+                      </svg>
+                      </div>
+                      С морозильной камерой<div class="catalog-filter__num">(45)</div>
+                  </label>
+                  <label class="catalog-filter__label">
+                    <input class="catalog-filter__input" type="checkbox">
+                      <div class="catalog-filter__box">
+                        <svg class="catalog-filter__checkmark" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 10 10" version="1.1">
+                        <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 3.394531 8.582031 L 0.144531 5.332031 C -0.046875 5.136719 -0.046875 4.820312 0.144531 4.625 L 0.855469 3.917969 C 1.046875 3.722656 1.367188 3.722656 1.5625 3.917969 L 3.75 6.105469 L 8.4375 1.417969 C 8.632812 1.222656 8.953125 1.222656 9.144531 1.417969 L 9.855469 2.125 C 10.046875 2.320312 10.046875 2.636719 9.855469 2.832031 L 4.105469 8.582031 C 3.910156 8.777344 3.589844 8.777344 3.394531 8.582031 Z M 3.394531 8.582031 "/>
+                      </svg>
+                      </div>
+                      Без морозильной камеры<div class="catalog-filter__num">(56)</div>
+                  </label>
+                </form>
+              </div>
+              <div class="catalog-filter__item">
+                <h6 class="catalog-filter__title">Морозильная камера <div class="catalog-filter__number"></div></h6>
+                <form class="catalog-filter__form" action="#">
+                  <label class="catalog-filter__label">
+                    <input class="catalog-filter__input" type="checkbox">
+                      <div class="catalog-filter__box">
+                        <svg class="catalog-filter__checkmark" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 10 10" version="1.1">
+                        <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 3.394531 8.582031 L 0.144531 5.332031 C -0.046875 5.136719 -0.046875 4.820312 0.144531 4.625 L 0.855469 3.917969 C 1.046875 3.722656 1.367188 3.722656 1.5625 3.917969 L 3.75 6.105469 L 8.4375 1.417969 C 8.632812 1.222656 8.953125 1.222656 9.144531 1.417969 L 9.855469 2.125 C 10.046875 2.320312 10.046875 2.636719 9.855469 2.832031 L 4.105469 8.582031 C 3.910156 8.777344 3.589844 8.777344 3.394531 8.582031 Z M 3.394531 8.582031 "/>
+                      </svg>
+                      </div>
+                      Сбоку<div class="catalog-filter__num">(7)</div>
+                </label>
+                  <label class="catalog-filter__label">
+                    <input class="catalog-filter__input" type="checkbox">
+                      <div class="catalog-filter__box">
+                        <svg class="catalog-filter__checkmark" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 10 10" version="1.1">
+                        <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 3.394531 8.582031 L 0.144531 5.332031 C -0.046875 5.136719 -0.046875 4.820312 0.144531 4.625 L 0.855469 3.917969 C 1.046875 3.722656 1.367188 3.722656 1.5625 3.917969 L 3.75 6.105469 L 8.4375 1.417969 C 8.632812 1.222656 8.953125 1.222656 9.144531 1.417969 L 9.855469 2.125 C 10.046875 2.320312 10.046875 2.636719 9.855469 2.832031 L 4.105469 8.582031 C 3.910156 8.777344 3.589844 8.777344 3.394531 8.582031 Z M 3.394531 8.582031 "/>
+                      </svg>
+                      </div>
+                      Снизу<div class="catalog-filter__num">(34)</div>
+                  </label>
+                  <label class="catalog-filter__label">
+                    <input class="catalog-filter__input" type="checkbox">
+                      <div class="catalog-filter__box">
+                        <svg class="catalog-filter__checkmark" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 10 10" version="1.1">
+                        <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 3.394531 8.582031 L 0.144531 5.332031 C -0.046875 5.136719 -0.046875 4.820312 0.144531 4.625 L 0.855469 3.917969 C 1.046875 3.722656 1.367188 3.722656 1.5625 3.917969 L 3.75 6.105469 L 8.4375 1.417969 C 8.632812 1.222656 8.953125 1.222656 9.144531 1.417969 L 9.855469 2.125 C 10.046875 2.320312 10.046875 2.636719 9.855469 2.832031 L 4.105469 8.582031 C 3.910156 8.777344 3.589844 8.777344 3.394531 8.582031 Z M 3.394531 8.582031 "/>
+                      </svg>
+                      </div>
+                        Сверху<div class="catalog-filter__num">(87)</div>
+                  </label>
+                  <label class="catalog-filter__label">
+                    <input class="catalog-filter__input" type="checkbox">
+                      <div class="catalog-filter__box">
+                        <svg class="catalog-filter__checkmark" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 10 10" version="1.1">
+                        <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 3.394531 8.582031 L 0.144531 5.332031 C -0.046875 5.136719 -0.046875 4.820312 0.144531 4.625 L 0.855469 3.917969 C 1.046875 3.722656 1.367188 3.722656 1.5625 3.917969 L 3.75 6.105469 L 8.4375 1.417969 C 8.632812 1.222656 8.953125 1.222656 9.144531 1.417969 L 9.855469 2.125 C 10.046875 2.320312 10.046875 2.636719 9.855469 2.832031 L 4.105469 8.582031 C 3.910156 8.777344 3.589844 8.777344 3.394531 8.582031 Z M 3.394531 8.582031 "/>
+                      </svg>
+                      </div>
+                        Отсутствует<div class="catalog-filter__num">(14)</div>
+                  </label>
+                </form>
+              </div>
+              <div class="catalog-filter__item">
+                <h6 class="catalog-filter__title">Общий объем, л</h6>
+                <form class="catalog-filter__form" action="#">
+                    <input class="catalog-filter__volume"
+                    type="text"
+                    data-min="0"
+                    data-max="765"
+                    data-from="30"
+                    data-to="765"
+                    data-grid="true"
+                    >
+                    <label class="catalog-filter__label">
+                      <div class="catalog-filter__price">
+                        от<span class="catalog-filter__price-old"></span>
+                        до<span class="catalog-filter__price-new"></span>
+                      </div>
+                    </label>
+                </form>
+              </div> 
+              <div class="catalog-filter__item">
+                <h6 class="catalog-filter__title">Высота, см</h6>
+                <form class="catalog-filter__form" action="#">
+                    <input class="catalog-filter__height" 
+                    type="text"
+                    data-min="0"
+                    data-max="765"
+                    data-from="30"
+                    data-to="765"
+                    data-grid="true"
+                    >
+                    <label class="catalog-filter__label">
+                      <div class="catalog-filter__price">
+                        от<span class="catalog-filter__from-price"></span>
+                        до<span class="catalog-filter__to-price"></span>
+                      </div>
+                    </label>
+                </form>
+              </div>   
+              <div class="catalog-filter__item">
+                <h6 class="catalog-filter__title">Морозильная камера<div class="catalog-filter__number">(154)</div></h6>
+              </div>
+              <div class="catalog-filter__link-box">
+                <a class="catalog-filter__more" href="#">Больше параметров</a>
+              </div>  
+              <div class="catalog-filter__found">
+                <span class="catalog-filter__found-text">
+                  Найдено <div class="catalog-filter__found-number">23</div> товара
+                </span>
+              </div> 
+            </div>
+            <div class="catalog-info">
+              <div class="catalog-info__filter">
+                <div class="catalog-info__filter-cancel">
+                  Samsung
+                  <a class="catalog-info__filter-link" href="#">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.6627 6.001L11.8625 0.801208C12.0455 0.618138 12.0455 0.321326 11.8625 0.138279C11.6794 -0.0447675 11.3826 -0.044791 11.1995 0.138279L5.99975 5.33807L0.799987 0.138279C0.616917 -0.044791 0.320105 -0.044791 0.137058 0.138279C-0.0459882 0.321349 -0.0460116 0.618161 0.137058 0.801208L5.33682 6.00098L0.137058 11.2008C-0.0460116 11.3838 -0.0460116 11.6807 0.137058 11.8637C0.228582 11.9552 0.348558 12.001 0.468534 12.001C0.588511 12.001 0.708464 11.9552 0.80001 11.8637L5.99975 6.66393L11.1995 11.8637C11.291 11.9552 11.411 12.001 11.531 12.001C11.651 12.001 11.7709 11.9552 11.8625 11.8637C12.0455 11.6806 12.0455 11.3838 11.8625 11.2008L6.6627 6.001Z" fill="white"/>
+                    </svg>
+                  </a>
+                </div>
+                <form class="catalog-info__form" action="#">
+                  <select class="catalog-info__select">
+                    <option value="">Сначала популярные</option>
+                    <option value="">Сначала дорогие</option>
+                    <option value="">Сначала дешевые</option>
+                    <option value="">Сначала популярные</option>
+                  </select>
+                </form>
+                <div class="catalog-info__filter-text">
+                  На странице: <div class="catalog-info__filter-number">20</div>
+                </div>
+                <button class="catalog-info__btn catalog-info__btn--active catalog-info__filter-grid">
+                  <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.2157 16.3496H6.1731C5.59433 16.3496 5.12524 15.8805 5.12524 15.3018C5.12524 14.723 5.59433 14.2539 6.1731 14.2539H20.2154C20.7941 14.2539 21.2632 14.723 21.2632 15.3018C21.2632 15.8805 20.7945 16.3496 20.2157 16.3496Z" fill="#404040"/>
+                    <path d="M20.2157 9.77149H6.1731C5.59433 9.77149 5.12524 9.3024 5.12524 8.72363C5.12524 8.14487 5.59433 7.67578 6.1731 7.67578H20.2154C20.7941 7.67578 21.2632 8.14487 21.2632 8.72363C21.2636 9.3024 20.7945 9.77149 20.2157 9.77149Z" fill="#404040"/>
+                    <path d="M20.2157 3.19434H6.1731C5.59433 3.19434 5.12524 2.72525 5.12524 2.14648C5.12524 1.56772 5.59433 1.09863 6.1731 1.09863H20.2154C20.7941 1.09863 21.2632 1.56772 21.2632 2.14648C21.2632 2.72525 20.7945 3.19434 20.2157 3.19434Z" fill="#404040"/>
+                    <path d="M1.67045 3.63484C2.44766 3.63484 3.07771 3.00479 3.07771 2.22758C3.07771 1.45037 2.44766 0.820312 1.67045 0.820312C0.893238 0.820312 0.263184 1.45037 0.263184 2.22758C0.263184 3.00479 0.893238 3.63484 1.67045 3.63484Z" fill="#404040"/>
+                    <path d="M1.67045 10.1309C2.44766 10.1309 3.07771 9.50088 3.07771 8.72367C3.07771 7.94646 2.44766 7.31641 1.67045 7.31641C0.893238 7.31641 0.263184 7.94646 0.263184 8.72367C0.263184 9.50088 0.893238 10.1309 1.67045 10.1309Z" fill="#404040"/>
+                    <path d="M1.67045 16.627C2.44766 16.627 3.07771 15.997 3.07771 15.2198C3.07771 14.4426 2.44766 13.8125 1.67045 13.8125C0.893238 13.8125 0.263184 14.4426 0.263184 15.2198C0.263184 15.997 0.893238 16.627 1.67045 16.627Z" fill="#404040"/>
+                  </svg>
+                </button>
+                <button class="catalog-info__btn catalog-info__filter-list">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.75 0H0.75C0.336 0 0 0.336 0 0.75V3.75C0 4.164 0.336 4.5 0.75 4.5H3.75C4.164 4.5 4.5 4.164 4.5 3.75V0.75C4.5 0.336 4.164 0 3.75 0Z" fill="#999999"/>
+                    <path d="M3.75 6.75H0.75C0.336 6.75 0 7.086 0 7.5V10.5C0 10.914 0.336 11.25 0.75 11.25H3.75C4.164 11.25 4.5 10.914 4.5 10.5V7.5C4.5 7.086 4.164 6.75 3.75 6.75Z" fill="#999999"/>
+                    <path d="M3.75 13.5H0.75C0.336 13.5 0 13.836 0 14.25V17.25C0 17.664 0.336 18 0.75 18H3.75C4.164 18 4.5 17.664 4.5 17.25V14.25C4.5 13.836 4.164 13.5 3.75 13.5Z" fill="#999999"/>
+                    <path d="M10.5 0H7.5C7.086 0 6.75 0.336 6.75 0.75V3.75C6.75 4.164 7.086 4.5 7.5 4.5H10.5C10.914 4.5 11.25 4.164 11.25 3.75V0.75C11.25 0.336 10.914 0 10.5 0Z" fill="#999999"/>
+                    <path d="M10.5 6.75H7.5C7.086 6.75 6.75 7.086 6.75 7.5V10.5C6.75 10.914 7.086 11.25 7.5 11.25H10.5C10.914 11.25 11.25 10.914 11.25 10.5V7.5C11.25 7.086 10.914 6.75 10.5 6.75Z" fill="#999999"/>
+                    <path d="M10.5 13.5H7.5C7.086 13.5 6.75 13.836 6.75 14.25V17.25C6.75 17.664 7.086 18 7.5 18H10.5C10.914 18 11.25 17.664 11.25 17.25V14.25C11.25 13.836 10.914 13.5 10.5 13.5Z" fill="#999999"/>
+                    <path d="M17.25 0H14.25C13.836 0 13.5 0.336 13.5 0.75V3.75C13.5 4.164 13.836 4.5 14.25 4.5H17.25C17.664 4.5 18 4.164 18 3.75V0.75C18 0.336 17.664 0 17.25 0Z" fill="#999999"/>
+                    <path d="M17.25 6.75H14.25C13.836 6.75 13.5 7.086 13.5 7.5V10.5C13.5 10.914 13.836 11.25 14.25 11.25H17.25C17.664 11.25 18 10.914 18 10.5V7.5C18 7.086 17.664 6.75 17.25 6.75Z" fill="#999999"/>
+                    <path d="M17.25 13.5H14.25C13.836 13.5 13.5 13.836 13.5 14.25V17.25C13.5 17.664 13.836 18 14.25 18H17.25C17.664 18 18 17.664 18 17.25V14.25C18 13.836 17.664 13.5 17.25 13.5Z" fill="#999999"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="catalog-info__content">
+                <div class="product__card">
+                  <div class="product__content">
+                    <img src="img/product/1.png" alt="product img" />
+                    <span class="product__new">Новинка</span>
+                    <span class="product__sale">-20%</span>
+                  </div>
+                  <div class="product__info">
+                    <div class="product__price">
+                      <div class="product__new-price">14 300 ₽</div>
+                      <div class="product__old-price">18 000 ₽</div>
+                    </div>
+                    <p class="product__title">
+                      Водонагреватель Electrolux EWH 80 Formax
+                    </p>
+                    <div class="product__container">
+                      <div class="star"></div>
+                      <a class="product__comment" href="#">
+                        <img src="img/icon/comment.svg" alt="comment logo" />
+                        <div class="product__comment-number">13</div>
+                      </a>
+                    </div>
+                    <div class="product__box">
+                      <a class="product__heart" href="#">
+                        <img src="img/icon/heart.svg" alt="heart logo">
+                      </a>
+                      <a class="product__rating" href="#">
+                        <img src="img/icon/rating.svg" alt="rating logo">
+                      </a>
+                      <a class="product__buy" href="#">Купить</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__card">
+                  <div class="product__content">
+                    <img src="img/product/1.png" alt="product img" />
+                    <span class="product__new">Новинка</span>
+                    <span class="product__sale">-20%</span>
+                  </div>
+                  <div class="product__info">
+                    <div class="product__price">
+                      <div class="product__new-price">14 300 ₽</div>
+                      <div class="product__old-price">18 000 ₽</div>
+                    </div>
+                    <p class="product__title">
+                      Водонагреватель Electrolux EWH 80 Formax
+                    </p>
+                    <div class="product__container">
+                      <div class="star"></div>
+                      <a class="product__comment" href="#">
+                        <img src="img/icon/comment.svg" alt="comment logo" />
+                        <div class="product__comment-number">13</div>
+                      </a>
+                    </div>
+                    <div class="product__box">
+                      <a class="product__heart" href="#">
+                        <img src="img/icon/heart.svg" alt="heart logo">
+                      </a>
+                      <a class="product__rating" href="#">
+                        <img src="img/icon/rating.svg" alt="rating logo">
+                      </a>
+                      <a class="product__buy" href="#">Купить</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__card">
+                  <div class="product__content">
+                    <img src="img/product/1.png" alt="product img" />
+                    <span class="product__new">Новинка</span>
+                    <span class="product__sale">-20%</span>
+                  </div>
+                  <div class="product__info">
+                    <div class="product__price">
+                      <div class="product__new-price">14 300 ₽</div>
+                      <div class="product__old-price">18 000 ₽</div>
+                    </div>
+                    <p class="product__title">
+                      Водонагреватель Electrolux EWH 80 Formax
+                    </p>
+                    <div class="product__container">
+                      <div class="star"></div>
+                      <a class="product__comment" href="#">
+                        <img src="img/icon/comment.svg" alt="comment logo" />
+                        <div class="product__comment-number">13</div>
+                      </a>
+                    </div>
+                    <div class="product__box">
+                      <a class="product__heart" href="#">
+                        <img src="img/icon/heart.svg" alt="heart logo">
+                      </a>
+                      <a class="product__rating" href="#">
+                        <img src="img/icon/rating.svg" alt="rating logo">
+                      </a>
+                      <a class="product__buy" href="#">Купить</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__card">
+                  <div class="product__content">
+                    <img src="img/product/1.png" alt="product img" />
+                    <span class="product__new">Новинка</span>
+                    <span class="product__sale">-20%</span>
+                  </div>
+                  <div class="product__info">
+                    <div class="product__price">
+                      <div class="product__new-price">14 300 ₽</div>
+                      <div class="product__old-price">18 000 ₽</div>
+                    </div>
+                    <p class="product__title">
+                      Водонагреватель Electrolux EWH 80 Formax
+                    </p>
+                    <div class="product__container">
+                      <div class="star"></div>
+                      <a class="product__comment" href="#">
+                        <img src="img/icon/comment.svg" alt="comment logo" />
+                        <div class="product__comment-number">13</div>
+                      </a>
+                    </div>
+                    <div class="product__box">
+                      <a class="product__heart" href="#">
+                        <img src="img/icon/heart.svg" alt="heart logo">
+                      </a>
+                      <a class="product__rating" href="#">
+                        <img src="img/icon/rating.svg" alt="rating logo">
+                      </a>
+                      <a class="product__buy" href="#">Купить</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__card">
+                  <div class="product__content">
+                    <img src="img/product/1.png" alt="product img" />
+                    <span class="product__new">Новинка</span>
+                    <span class="product__sale">-20%</span>
+                  </div>
+                  <div class="product__info">
+                    <div class="product__price">
+                      <div class="product__new-price">14 300 ₽</div>
+                      <div class="product__old-price">18 000 ₽</div>
+                    </div>
+                    <p class="product__title">
+                      Водонагреватель Electrolux EWH 80 Formax
+                    </p>
+                    <div class="product__container">
+                      <div class="star"></div>
+                      <a class="product__comment" href="#">
+                        <img src="img/icon/comment.svg" alt="comment logo" />
+                        <div class="product__comment-number">13</div>
+                      </a>
+                    </div>
+                    <div class="product__box">
+                      <a class="product__heart" href="#">
+                        <img src="img/icon/heart.svg" alt="heart logo">
+                      </a>
+                      <a class="product__rating" href="#">
+                        <img src="img/icon/rating.svg" alt="rating logo">
+                      </a>
+                      <a class="product__buy" href="#">Купить</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__card">
+                  <div class="product__content">
+                    <img src="img/product/1.png" alt="product img" />
+                    <span class="product__new">Новинка</span>
+                    <span class="product__sale">-20%</span>
+                  </div>
+                  <div class="product__info">
+                    <div class="product__price">
+                      <div class="product__new-price">14 300 ₽</div>
+                      <div class="product__old-price">18 000 ₽</div>
+                    </div>
+                    <p class="product__title">
+                      Водонагреватель Electrolux EWH 80 Formax
+                    </p>
+                    <div class="product__container">
+                      <div class="star"></div>
+                      <a class="product__comment" href="#">
+                        <img src="img/icon/comment.svg" alt="comment logo" />
+                        <div class="product__comment-number">13</div>
+                      </a>
+                    </div>
+                    <div class="product__box">
+                      <a class="product__heart" href="#">
+                        <img src="img/icon/heart.svg" alt="heart logo">
+                      </a>
+                      <a class="product__rating" href="#">
+                        <img src="img/icon/rating.svg" alt="rating logo">
+                      </a>
+                      <a class="product__buy" href="#">Купить</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__card">
+                  <div class="product__content">
+                    <img src="img/product/1.png" alt="product img" />
+                    <span class="product__new">Новинка</span>
+                    <span class="product__sale">-20%</span>
+                  </div>
+                  <div class="product__info">
+                    <div class="product__price">
+                      <div class="product__new-price">14 300 ₽</div>
+                      <div class="product__old-price">18 000 ₽</div>
+                    </div>
+                    <p class="product__title">
+                      Водонагреватель Electrolux EWH 80 Formax
+                    </p>
+                    <div class="product__container">
+                      <div class="star"></div>
+                      <a class="product__comment" href="#">
+                        <img src="img/icon/comment.svg" alt="comment logo" />
+                        <div class="product__comment-number">13</div>
+                      </a>
+                    </div>
+                    <div class="product__box">
+                      <a class="product__heart" href="#">
+                        <img src="img/icon/heart.svg" alt="heart logo">
+                      </a>
+                      <a class="product__rating" href="#">
+                        <img src="img/icon/rating.svg" alt="rating logo">
+                      </a>
+                      <a class="product__buy" href="#">Купить</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__card">
+                  <div class="product__content">
+                    <img src="img/product/1.png" alt="product img" />
+                    <span class="product__new">Новинка</span>
+                    <span class="product__sale">-20%</span>
+                  </div>
+                  <div class="product__info">
+                    <div class="product__price">
+                      <div class="product__new-price">14 300 ₽</div>
+                      <div class="product__old-price">18 000 ₽</div>
+                    </div>
+                    <p class="product__title">
+                      Водонагреватель Electrolux EWH 80 Formax
+                    </p>
+                    <div class="product__container">
+                      <div class="star"></div>
+                      <a class="product__comment" href="#">
+                        <img src="img/icon/comment.svg" alt="comment logo" />
+                        <div class="product__comment-number">13</div>
+                      </a>
+                    </div>
+                    <div class="product__box">
+                      <a class="product__heart" href="#">
+                        <img src="img/icon/heart.svg" alt="heart logo">
+                      </a>
+                      <a class="product__rating" href="#">
+                        <img src="img/icon/rating.svg" alt="rating logo">
+                      </a>
+                      <a class="product__buy" href="#">Купить</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__card">
+                  <div class="product__content">
+                    <img src="img/product/1.png" alt="product img" />
+                    <span class="product__new">Новинка</span>
+                    <span class="product__sale">-20%</span>
+                  </div>
+                  <div class="product__info">
+                    <div class="product__price">
+                      <div class="product__new-price">14 300 ₽</div>
+                      <div class="product__old-price">18 000 ₽</div>
+                    </div>
+                    <p class="product__title">
+                      Водонагреватель Electrolux EWH 80 Formax
+                    </p>
+                    <div class="product__container">
+                      <div class="star"></div>
+                      <a class="product__comment" href="#">
+                        <img src="img/icon/comment.svg" alt="comment logo" />
+                        <div class="product__comment-number">13</div>
+                      </a>
+                    </div>
+                    <div class="product__box">
+                      <a class="product__heart" href="#">
+                        <img src="img/icon/heart.svg" alt="heart logo">
+                      </a>
+                      <a class="product__rating" href="#">
+                        <img src="img/icon/rating.svg" alt="rating logo">
+                      </a>
+                      <a class="product__buy" href="#">Купить</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__card">
+                  <div class="product__content">
+                    <img src="img/product/1.png" alt="product img" />
+                    <span class="product__new">Новинка</span>
+                    <span class="product__sale">-20%</span>
+                  </div>
+                  <div class="product__info">
+                    <div class="product__price">
+                      <div class="product__new-price">14 300 ₽</div>
+                      <div class="product__old-price">18 000 ₽</div>
+                    </div>
+                    <p class="product__title">
+                      Водонагреватель Electrolux EWH 80 Formax
+                    </p>
+                    <div class="product__container">
+                      <div class="star"></div>
+                      <a class="product__comment" href="#">
+                        <img src="img/icon/comment.svg" alt="comment logo" />
+                        <div class="product__comment-number">13</div>
+                      </a>
+                    </div>
+                    <div class="product__box">
+                      <a class="product__heart" href="#">
+                        <img src="img/icon/heart.svg" alt="heart logo">
+                      </a>
+                      <a class="product__rating" href="#">
+                        <img src="img/icon/rating.svg" alt="rating logo">
+                      </a>
+                      <a class="product__buy" href="#">Купить</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__card">
+                  <div class="product__content">
+                    <img src="img/product/1.png" alt="product img" />
+                    <span class="product__new">Новинка</span>
+                    <span class="product__sale">-20%</span>
+                  </div>
+                  <div class="product__info">
+                    <div class="product__price">
+                      <div class="product__new-price">14 300 ₽</div>
+                      <div class="product__old-price">18 000 ₽</div>
+                    </div>
+                    <p class="product__title">
+                      Водонагреватель Electrolux EWH 80 Formax
+                    </p>
+                    <div class="product__container">
+                      <div class="star"></div>
+                      <a class="product__comment" href="#">
+                        <img src="img/icon/comment.svg" alt="comment logo" />
+                        <div class="product__comment-number">13</div>
+                      </a>
+                    </div>
+                    <div class="product__box">
+                      <a class="product__heart" href="#">
+                        <img src="img/icon/heart.svg" alt="heart logo">
+                      </a>
+                      <a class="product__rating" href="#">
+                        <img src="img/icon/rating.svg" alt="rating logo">
+                      </a>
+                      <a class="product__buy" href="#">Купить</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__card">
+                  <div class="product__content">
+                    <img src="img/product/1.png" alt="product img" />
+                    <span class="product__new">Новинка</span>
+                    <span class="product__sale">-20%</span>
+                  </div>
+                  <div class="product__info">
+                    <div class="product__price">
+                      <div class="product__new-price">14 300 ₽</div>
+                      <div class="product__old-price">18 000 ₽</div>
+                    </div>
+                    <p class="product__title">
+                      Водонагреватель Electrolux EWH 80 Formax
+                    </p>
+                    <div class="product__container">
+                      <div class="star"></div>
+                      <a class="product__comment" href="#">
+                        <img src="img/icon/comment.svg" alt="comment logo" />
+                        <div class="product__comment-number">13</div>
+                      </a>
+                    </div>
+                    <div class="product__box">
+                      <a class="product__heart" href="#">
+                        <img src="img/icon/heart.svg" alt="heart logo">
+                      </a>
+                      <a class="product__rating" href="#">
+                        <img src="img/icon/rating.svg" alt="rating logo">
+                      </a>
+                      <a class="product__buy" href="#">Купить</a>
+                    </div>
+                  </div>
+                </div>  
+                
+                
+              </div>
+              <a class="catalog-info__more" href="#">Показать еще 20 товаров</a>
+              <div class="catalog-info__pagination">
+                <a class="catalog-info__prev" href="#">
+                  <img src="img/icon/pagination-prev.svg" alt="prev arrow">
+                </a>            
+                <ul class="catalog-info__pagination-list">
+                  <li class="catalog-info__pagination-item"><a class="catalog-info__pagination-link catalog-info__pagination--active" href="#">1</a></li>
+                  <li class="catalog-info__pagination-item"><a class="catalog-info__pagination-link" href="#">2</a></li>
+                  <li class="catalog-info__pagination-item"><a class="catalog-info__pagination-link" href="#">3</a></li>
+                  <li class="catalog-info__pagination-item"><a class="catalog-info__pagination-link" href="#">4</a></li>
+                  <li class="catalog-info__pagination-item"><a class="catalog-info__pagination-link" href="#">...</a></li>
+                  <li class="catalog-info__pagination-item"><a class="catalog-info__pagination-link" href="#">17</a></li>
+                </ul>
+                <a class="catalog-info__next" href="#">
+                  <img src="img/icon/pagination-next.svg" alt="next arrow">
+                </a>
+              </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      <section class="info">
+        <div class="container">
+          <h3 class="title">Техника, которая делает вашу жизнь проще</h3>
+          <div class="info__inner">
+            <p class="info__text">Порой возникает ситуация, когда в какой-то момент в вашем доме требуется заменить один или несколько бытовых приборов. Возможно также, что вы обустраиваете новый дом или квартиру, начиная с нуля. Это включает в себя покупку крупной бытовой техники, такую ​​как холодильники стиральные и посудомоечные машины, а также более мелкую бытовую технику, которая значительно сокращает время на кухне или при уборке.  Наш интернет-магазин бытовой техники поможет с выбором, гарантируя низкие цены и выгодные покупки на все линейки товаров.
+            </p>
+            <h6 class="info__subtitle">Холодильники</h6>
+            <p class="info__text">Подобно автомобилю или другой крупногабаритной технике, стоит знать, на что обращать внимание при выборе холодильника для кухни. Например, при выборе холодильника важно знать, что искать, например, сколько дверей вы хотите, где разместить морозильную камеру, хотите ли вы внешний льдогенератор, диспенсер для воды, предназначенные для сохранения свежести ваших продуктов на более длительные периоды времени. Размер является важным фактором, от небольшие по объему до больших, которые идеально подходят для офисов, комнат общежития и малогабаритных квартир. Также важны другие параметры, такие как цвет, ширина, бренд и рейтинг.</p>
+            <h6 class="info__subtitle">Тостеры</h6>
+            <p class="info__text">Такую же внимательность при выборе крупногабаритной техники следует проявлять и в отношении небольших приборов. Учитывайте количество человек в семье, частоту пользования – от этого зависит, какой именно тостер следует рассмотреть: будет ли он на два или четыре ломтика хлеба, имеет он ручное или цифровое управление, и должен ли тостер быть определенного цвета, будет нержавеющая сталь сочетается с вашим декором? Вы даже можете выбрать тостер, который одновременно выполняет несколько функций, что дает ему преимущество на вашей кухне.</p>
+            <h6 class="info__subtitle">Микроволновые печи</h6>
+            <p class="info__text">Говоря об универсальных приборах, на кухне нет ничего более универсального, чем микроволновые печи. Эти устройства прошли долгий путь, прежде чем оказаться на нашей кухне. Микроволны не только разогревают пищу и напитки с помощью электромагнитных волн, но многие из них также обладают функцией конвекции. Они больше не предназначены для того, чтобы приготовить попкорн или подогреть еду для небольшого перекуса. Теперь вы можете готовить целые блюда, используя только микроволновую печь, а также выполнять другие задачи, такие как размораживание продуктов и размягчение сливочного масла. Микроволновки обычно доступны в трех видах: на столешнице, подвесные и встраиваемые. Опять же, есть факторы, которые следует учитывать при выборе микроволновой печи, и у нас есть разные модели, из которых вы можете выбрать. В наличии имеются небольшие устройства с объемом для приготовления пищи от 13 литров или меньше до 44 литров или более. Еще одно соображение - мощность, и у нас есть модели, которые варьируются от менее 700 Вт до более 1000 Вт; чем выше мощность - тем быстрее готовятся ваши продукты.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-top__content">
+            <a class="footer-top__logo" href="#">
+              <img src="img/icon/logo.png" alt="footer logo" />
+            </a>
+            <a class="footer-top__phone" href="tel:+74951509555"
+              >+7(495)150-95-55</a
+            >
+            <ul class="footer-top__social">
+              <li class="footer-top__social-item">
+                <a class="footer-top__social-link" href="#">
+                  <svg
+                    width="26"
+                    height="23"
+                    viewBox="0 0 26 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M25.5985 0.682037C25.2809 0.278702 24.8052 0.0566406 24.2589 0.0566406C23.962 0.0566406 23.6474 0.121529 23.324 0.249863L1.31553 8.97431C0.147563 9.43718 -0.00974006 10.1318 0.0003765 10.5046C0.0104931 10.8775 0.205485 11.5618 1.39686 11.9555C1.404 11.9577 1.41114 11.96 1.41828 11.962L5.98344 13.3187L8.45228 20.65C8.78891 21.6495 9.54448 22.2704 10.4244 22.2704C10.9792 22.2704 11.5249 22.029 12.0026 21.5725L14.8263 18.8725L18.9219 22.2972C18.9223 22.2976 18.9229 22.2978 18.9233 22.2982L18.9622 22.3307C18.9658 22.3336 18.9696 22.3367 18.9731 22.3396C19.4284 22.7063 19.9253 22.8999 20.4107 22.9001H20.4109C21.3592 22.9001 22.1144 22.1711 22.3344 21.0431L25.9405 2.55225C26.0853 1.81006 25.9639 1.14594 25.5985 0.682037ZM7.51065 13.061L16.3182 8.38847L10.834 14.4399C10.7442 14.539 10.6805 14.6604 10.6492 14.7924L9.59169 19.2406L7.51065 13.061ZM10.9705 20.4086C10.934 20.4434 10.8973 20.4745 10.8606 20.5032L11.8417 16.3767L13.6264 17.8691L10.9705 20.4086ZM24.4474 2.23811L20.8413 20.7291C20.8066 20.9061 20.6957 21.3179 20.4107 21.3179C20.2698 21.3179 20.0929 21.2381 19.9118 21.0933L15.2709 17.2128C15.2703 17.2122 15.2695 17.2116 15.2687 17.2112L12.5072 14.902L20.438 6.15076C20.692 5.87061 20.715 5.44152 20.4926 5.13377C20.27 4.82601 19.8668 4.72919 19.5369 4.90429L6.49284 11.8244L1.8656 10.4496L23.8674 1.72787C24.0532 1.65412 24.183 1.63867 24.2589 1.63867C24.3056 1.63867 24.3885 1.64444 24.4192 1.68378C24.4597 1.73508 24.5113 1.90997 24.4474 2.23811Z"
+                      fill="#6E6E6E"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-top__social-item">
+                <a class="footer-top__social-link" href="#">
+                  <svg
+                    width="27"
+                    height="17"
+                    viewBox="0 0 27 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.6631 16.9375C17.5691 16.9375 16.1764 14.4648 16.4779 13.7537C16.4734 13.2227 16.4689 12.712 16.4869 12.4015C16.7344 12.4713 17.3182 12.7671 18.5243 13.9394C20.3861 15.8181 20.862 16.9375 22.3661 16.9375H25.1347C26.0122 16.9375 26.469 16.5741 26.6974 16.2693C26.9179 15.9745 27.1339 15.457 26.8976 14.6515C26.28 12.712 22.6777 9.36287 22.4539 9.00963C22.4876 8.94438 22.5416 8.85775 22.5697 8.81275H22.5675C23.2785 7.87337 25.992 3.80762 26.3914 2.18087C26.3925 2.17862 26.3936 2.17525 26.3936 2.17188C26.6096 1.42937 26.4116 0.947875 26.2069 0.675625C25.8986 0.268375 25.4081 0.0625 24.7455 0.0625H21.9769C21.0499 0.0625 20.3468 0.529375 19.9913 1.381C19.3961 2.89412 17.7244 6.00588 16.4711 7.10725C16.4329 5.54688 16.4587 4.3555 16.479 3.47012C16.5195 1.74325 16.65 0.0625 14.8579 0.0625H10.5064C9.38363 0.0625 8.30925 1.28875 9.4725 2.7445C10.4895 4.02025 9.83812 4.73125 10.0575 8.2705C9.2025 7.35362 7.6815 4.8775 6.606 1.71288C6.3045 0.85675 5.84775 0.0636249 4.56187 0.0636249H1.79325C0.6705 0.0636249 0 0.675625 0 1.7005C0 4.00225 5.09513 16.9375 13.6631 16.9375ZM4.56187 1.75112C4.806 1.75112 4.83075 1.75113 5.01188 2.26525C6.11325 5.50863 8.58375 10.3079 10.3883 10.3079C11.7439 10.3079 11.7439 8.9185 11.7439 8.39537L11.7428 4.23063C11.6685 2.8525 11.1668 2.16625 10.8371 1.75L14.7836 1.7545C14.7859 1.77363 14.7611 6.36137 14.7949 7.47287C14.7949 9.05125 16.0481 9.95575 18.0045 7.97575C20.0689 5.64588 21.4965 2.16288 21.5539 2.02113C21.6383 1.81863 21.7114 1.75 21.9769 1.75H24.7455H24.7568C24.7556 1.75338 24.7556 1.75675 24.7545 1.76012C24.5014 2.94137 22.0028 6.70563 21.1669 7.8745C21.1534 7.8925 21.141 7.91163 21.1286 7.93075C20.7607 8.5315 20.4615 9.19525 21.1793 10.129H21.1804C21.2456 10.2078 21.4155 10.3923 21.663 10.6488C22.4325 11.443 25.0717 14.1587 25.3057 15.2387C25.1505 15.2635 24.9818 15.2455 22.3661 15.2511C21.8092 15.2511 21.3739 14.4186 19.7122 12.7424C18.2183 11.2889 17.2485 10.6949 16.3654 10.6949C14.6509 10.6949 14.7758 12.0865 14.7915 13.7695C14.7971 15.5942 14.7859 15.0171 14.7983 15.1319C14.6981 15.1713 14.4113 15.25 13.6631 15.25C6.525 15.25 1.8765 3.92013 1.69762 1.7545C1.7595 1.74888 2.61112 1.75225 4.56187 1.75112Z"
+                      fill="#6E6E6E"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-top__social-item">
+                <a class="footer-top__social-link" href="#">
+                  <svg
+                    width="26"
+                    height="25"
+                    viewBox="0 0 26 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24.2911 8.82359C24.2913 6.47564 23.371 4.26235 21.7 2.59132C20.0289 0.920296 17.8157 0 15.4675 0H10.2395C10.2393 0 10.2393 0 10.2393 0C7.89153 0 5.67805 0.920296 4.00722 2.59113C2.33619 4.26235 1.41589 6.47564 1.41589 8.82359V12.9332C1.41589 14.7516 1.97055 16.5007 3.01997 17.9916C3.9458 19.3069 5.19092 20.3344 6.6426 20.9858V23.3463C6.6426 24.5668 7.326 25 7.91118 25C8.32927 25 8.74736 24.7936 9.15439 24.3868L11.7842 21.7569L15.4677 21.7567C17.8157 21.7567 20.0289 20.8364 21.7 19.1656C23.371 17.4946 24.2913 15.2811 24.2913 12.9332L24.2911 8.82359ZM15.4677 20.2919L11.481 20.2921C11.2866 20.2921 11.1005 20.3691 10.9631 20.5065L8.1187 23.3509C8.11507 23.3547 8.11126 23.3583 8.10744 23.362C8.10744 23.3568 8.10744 23.3515 8.10744 23.3463V20.4969C8.10744 20.1931 7.91995 19.9209 7.63614 19.8126C4.7919 18.7273 2.88093 15.9626 2.88093 12.9332V8.82359C2.88093 6.86684 3.64883 5.02129 5.0431 3.62682C6.43737 2.23274 8.28273 1.46484 10.2395 1.46484H15.4675C17.4243 1.46484 19.2698 2.23274 20.6641 3.62701C22.0586 5.02148 22.8265 6.86703 22.8263 8.82359L22.8265 12.9332C22.8263 16.9909 19.5252 20.2919 15.4677 20.2919Z"
+                      fill="#6E6E6E"
+                    />
+                    <path
+                      d="M14.8013 11.9797C14.5154 11.6936 14.0517 11.6936 13.7656 11.9797L13.1739 12.5711L10.8813 10.2787L11.473 9.68721C11.6103 9.54988 11.6875 9.36353 11.6875 9.16917C11.6875 8.97501 11.6103 8.78866 11.473 8.65133L8.69929 5.87766C8.56196 5.74033 8.37581 5.66309 8.18145 5.66309C7.98728 5.66309 7.80093 5.74033 7.6636 5.87766L5.72192 7.81934C4.67193 8.86934 4.67193 10.5781 5.72211 11.6287L11.8239 17.7309C12.3313 18.238 13.0078 18.5173 13.7286 18.5173C14.4496 18.5173 15.1261 18.238 15.6335 17.7309L17.5751 15.7894C17.7125 15.6519 17.7897 15.4657 17.7897 15.2714C17.7897 15.0772 17.7125 14.8908 17.5751 14.7535L14.8013 11.9797ZM14.5976 16.6948C14.367 16.9254 14.0584 17.0524 13.7286 17.0524C13.3988 17.0524 13.0902 16.9254 12.8596 16.6948L6.75799 10.5928C6.27887 10.1137 6.27868 9.33397 6.7578 8.85503L8.18145 7.4312L9.91923 9.16917L9.32757 9.76064C9.19024 9.89797 9.113 10.0843 9.113 10.2785C9.113 10.4728 9.19024 10.659 9.32757 10.7965L12.6559 14.1248C12.942 14.4108 13.4057 14.4109 13.6918 14.1248L14.2834 13.5334L16.0212 15.2712L14.5976 16.6948Z"
+                      fill="#6E6E6E"
+                    />
+                    <path
+                      d="M13.0312 3.24023C12.6267 3.24023 12.2988 3.56811 12.2988 3.97266C12.2988 4.37701 12.6267 4.70508 13.0312 4.70508C14.7074 4.70508 16.2835 5.35777 17.4687 6.54319C18.6541 7.72842 19.3068 9.30427 19.3068 10.9806C19.3068 11.385 19.6347 11.7131 20.0392 11.7131C20.4436 11.7131 20.7717 11.3852 20.7717 10.9806C20.7717 8.91307 19.9666 6.96929 18.5046 5.50731C17.0426 4.04533 15.0988 3.24023 13.0312 3.24023Z"
+                      fill="#6E6E6E"
+                    />
+                    <path
+                      d="M16.1688 10.9802C16.1688 11.3845 16.4969 11.7126 16.9013 11.7126C17.3058 11.7126 17.6337 11.3845 17.6337 10.9802C17.6337 8.44244 15.569 6.37793 13.0312 6.37793C12.6267 6.37793 12.2988 6.7058 12.2988 7.11035C12.2988 7.5149 12.6267 7.84277 13.0312 7.84277C14.7614 7.84277 16.1688 9.25021 16.1688 10.9802Z"
+                      fill="#6E6E6E"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-top__social-item">
+                <a class="footer-top__social-link" href="#">
+                  <svg
+                    width="17"
+                    height="24"
+                    viewBox="0 0 17 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.5007 0C5.05382 0 2.2507 2.691 2.2507 6C2.2507 9.309 5.05382 12 8.5007 12C11.9476 12 14.7507 9.309 14.7507 6C14.7507 2.691 11.9476 0 8.5007 0ZM8.5007 10.5C5.91632 10.5 3.8132 8.481 3.8132 6C3.8132 3.519 5.91632 1.5 8.5007 1.5C11.0851 1.5 13.1882 3.519 13.1882 6C13.1882 8.481 11.0851 10.5 8.5007 10.5Z"
+                      fill="#6E6E6E"
+                    />
+                    <path
+                      d="M14.6102 22.8193L9.14144 15.3193C8.85081 14.9203 8.1555 14.9203 7.86175 15.3193L2.393 22.8193C2.14612 23.1583 2.2305 23.6263 2.58519 23.8633C2.93831 24.1018 3.42581 24.0193 3.67269 23.6803L8.50081 17.0578L13.3305 23.6803C13.4821 23.8888 13.7243 23.9998 13.9696 23.9998C14.1258 23.9998 14.2805 23.9563 14.4196 23.8633C14.7727 23.6263 14.8586 23.1598 14.6102 22.8193Z"
+                      fill="#6E6E6E"
+                    />
+                    <path
+                      d="M16.2335 12.3629C15.9289 12.0704 15.4335 12.0704 15.1289 12.3629C11.471 15.8729 5.52573 15.8729 1.87105 12.3629C1.56636 12.0704 1.07104 12.0704 0.766357 12.3629C0.46167 12.6554 0.46167 13.1309 0.766357 13.4234C2.89917 15.4694 5.70073 16.4939 8.50073 16.4939C11.3007 16.4939 14.1023 15.4694 16.2335 13.4234C16.5382 13.1309 16.5382 12.6554 16.2335 12.3629Z"
+                      fill="#6E6E6E"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <p class="footer-top__info">ООО"БТ МАРКЕТ", ИНН 7728483067</p>
+            <p class="footer-top__address">
+              Москва, пр-д Соловьиный д. 2, ком. 1
+            </p>
+          </div>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Как оформить заказ</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Доставка</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Оплата</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Прием товара</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Почему покупать у нас</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Подключение техники</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Отзывы о нас</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#"
+                >Пользовательское соглашение</a
+              >
+            </li>
+          </ul>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">О компании</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Доставка</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Юридическая информация</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Для поставщиков</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Для оптовых клиентов</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Оставить обращение</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#"
+                >Политика конфиденциальности</a
+              >
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Новости и обзоры</a>
+            </li>
+          </ul>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Вопрос-ответ</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Дополнительный сервис</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Проверка на битые пиксели</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Утилизация техники</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Гарантийное обслуживание</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Сервисные центры</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Наши гарантии</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Обмен и возврат товара</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="footer-bottom__title">
+            Обращаем Ваше внимание на то, что данный интернет-сайт носит
+            исключительно информационный характер и ни при каких условиях
+            информационные материалы и цены, размещенные на сайте, не являются
+            публичной офертой, определяемой положениями Статьи 437 Гражданского
+            кодекса РФ.
+          </p>
+          <div class="footer-bottom__content">
+            <a class="footer-bottom__link" href="#">elecity.ru</a>
+            <span class="footer-bottom__copyright"> © 2011-2021</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
